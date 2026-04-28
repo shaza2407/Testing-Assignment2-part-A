@@ -1,0 +1,4 @@
+Fname,Lname,email,telephone,password,expected
+Shaza,Ahmed,shaza,1234567890,12345,
+Aisha,Ashour,aisha,1234567890,12,Password must be between 4 and 20 characters!
+Rania,Rafat,rania,1234567890,,Password must be between 4 and 20 characters!

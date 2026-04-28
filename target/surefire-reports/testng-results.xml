@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-08T00:14:22 EET" name="Surefire suite" finished-at="2026-04-08T00:14:53 EET" duration-ms="30486">
+    <groups>
+    </groups>
+    <test started-at="2026-04-08T00:14:22 EET" name="Surefire test" finished-at="2026-04-08T00:14:53 EET" duration-ms="30486">
+      <class name="tests.LoginTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTests@272113c4]" started-at="2026-04-08T00:14:23 EET" name="setup" finished-at="2026-04-08T00:14:30 EET" duration-ms="7645" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTests@272113c4]" started-at="2026-04-08T00:14:30 EET" name="testLogin" data-provider="loginData" finished-at="2026-04-08T00:14:34 EET" duration-ms="3450" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[validtest100@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[validpass]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.LoginTests@272113c4]" started-at="2026-04-08T00:14:34 EET" name="teardown" finished-at="2026-04-08T00:14:34 EET" duration-ms="521" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTests@272113c4]" started-at="2026-04-08T00:14:34 EET" name="setup" finished-at="2026-04-08T00:14:40 EET" duration-ms="5384" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTests@272113c4]" started-at="2026-04-08T00:14:40 EET" name="testLogin" data-provider="loginData" finished-at="2026-04-08T00:14:42 EET" duration-ms="1917" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrong@email.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrongpass]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.LoginTests@272113c4]" started-at="2026-04-08T00:14:42 EET" name="teardown" finished-at="2026-04-08T00:14:42 EET" duration-ms="540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.LoginTests -->
+      <class name="tests.RegistrationTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.RegistrationTests@73e9cf30]" started-at="2026-04-08T00:14:42 EET" name="setup" finished-at="2026-04-08T00:14:48 EET" duration-ms="5682" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="registrationWithoutErrors()[pri:0, instance:tests.RegistrationTests@73e9cf30]" started-at="2026-04-08T00:14:48 EET" name="registrationWithoutErrors" finished-at="2026-04-08T00:14:52 EET" duration-ms="4355" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationWithoutErrors -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.RegistrationTests@73e9cf30]" started-at="2026-04-08T00:14:52 EET" name="teardown" finished-at="2026-04-08T00:14:53 EET" duration-ms="671" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.RegistrationTests -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

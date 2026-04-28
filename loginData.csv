@@ -1,0 +1,5 @@
+email,password,expected
+zozoo@test.com,1234,valid
+wrong@email.com,wrongpass,invalid
+zozoo@test.com,12345,invalid
+shazawagdyy@gmail.com,1234,valid

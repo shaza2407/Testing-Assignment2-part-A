@@ -1,15 +1,19 @@
 package tests;
 
-import base.BaseTest;
-import configuration.CSVUtils;
+import java.time.Duration;
+
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import pages.*;
 
-import java.time.Duration;
+import base.BaseTest;
+import configuration.CSVUtils;
+import pages.AccountPage;
+import pages.HomePage;
+import pages.LoginPage;
+import pages.SearchPage;
 
 // Scenario 7:
 // 1- Login by any valid user
@@ -33,6 +37,11 @@ public class SearchTests extends BaseTest {
     public Object[][] getData() throws Exception {
         return CSVUtils.getTestData("validUser.csv");
     }
+    @DataProvider(name = "SearchSubcategoryData")
+    public Object[][] getSearchSubcategoryData() throws Exception {
+        return CSVUtils.getTestData("SearchSubcategoryData.csv");
+    }
+
 
     @Test(dataProvider = "validUser")
     public void searchTest(String email, String password) {
@@ -52,6 +61,36 @@ public class SearchTests extends BaseTest {
         AccountPage account = new AccountPage(driver);          //logout
         account.logOut();
     }
+
+    @Test(dataProvider = "SearchSubcategoryData")
+    public void searchInSubcategoriesTest(String email, String password, String searchTerm, 
+                                          String category, String expectedNoProductMsg, String expectedProduct) {
+        HomePage home = new HomePage(driver);
+        LoginPage login = new LoginPage(driver);
+        SearchPage search = new SearchPage(driver);
+        AccountPage account = new AccountPage(driver);
+
+        home.goToLogin();
+        login.login(email, password);
+
+        search.searchButtonIconClick();
+
+        search.keywordsInputClick(searchTerm);
+        search.selectCategory(category);
+        
+        search.searchButtonClick();
+
+        Assert.assertEquals(search.getResultMessage(), expectedNoProductMsg);
+
+        search.subCategoryClick();
+        search.searchButtonClick();
+       
+        Assert.assertTrue(search.isProductDisplayed(), expectedProduct + " was not found on the page.");
+
+        account.logOut();
+    }
+
+    
 
 
 }

@@ -9,54 +9,10 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">1,958</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">11,500</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">tests.CheckoutTests</td><td><a href="#m0">setup</a></td><td rowspan="1">1777455505346</td><td rowspan="1">1742</td></tr><tr><th colspan="4">Surefire test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">tests.CheckoutTests</td><td><a href="#m1">teardown</a></td><td rowspan="1">1777455507266</td><td rowspan="1">0</td></tr><tr><th colspan="4">Surefire test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">tests.CheckoutTests</td><td><a href="#m2">normalCheckoutProcessTest</a></td><td rowspan="1">1777455507250</td><td rowspan="1">1</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.SearchTests</td><td><a href="#m0">searchInSubcategoriesTest</a></td><td rowspan="1">1777464152343</td><td rowspan="1">5809</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">tests.CheckoutTests#setup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: JavaScript code failed
-from unknown command: &apos;Runtime.evaluate&apos; wasn&apos;t found
-  (Session info: MicrosoftEdge=147.0.3912.72)
-Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;26&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [bdd4a55090709d1eeb384cea8461c84c, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 147.0.3912.72, fedcm:accounts: true, goog:processID: 17888, ms:edgeOptions: {debuggerAddress: localhost:53218}, msedge: {msedgedriverVersion: 147.0.3912.72 (d4380ba2b9dc..., userDataDir: E:\TMP\scoped_dir21140_9329...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53218/devtoo..., se:cdpVersion: 147.0.3912.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bdd4a55090709d1eeb384cea8461c84c
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:686)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:690)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1197)
-	at base.BaseTest.setup(BaseTest.java:23)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
-... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">tests.CheckoutTests#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">tests.CheckoutTests#normalCheckoutProcessTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th></tr><tr class="param stripe"><td>user2@mail.com</td><td>12345</td><td>MP3 Players</td><td>iPod Shuffle</td><td>John</td><td>Doe</td><td>Cairo</td><td>Cairo</td><td>Egypt</td><td>Al Qahirah</td><td>Test order 1</td></tr><tr><th colspan="11">Exception</th></tr><tr><td colspan="11"><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: JavaScript code failed
-from unknown command: &apos;Runtime.evaluate&apos; wasn&apos;t found
-  (Session info: MicrosoftEdge=147.0.3912.72)
-Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;26&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [bdd4a55090709d1eeb384cea8461c84c, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 147.0.3912.72, fedcm:accounts: true, goog:processID: 17888, ms:edgeOptions: {debuggerAddress: localhost:53218}, msedge: {msedgedriverVersion: 147.0.3912.72 (d4380ba2b9dc..., userDataDir: E:\TMP\scoped_dir21140_9329...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53218/devtoo..., se:cdpVersion: 147.0.3912.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bdd4a55090709d1eeb384cea8461c84c
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:686)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:690)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1197)
-	at base.BaseTest.setup(BaseTest.java:23)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
-... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Surefire test</h2><h3 id="m0">tests.SearchTests#searchInSubcategoriesTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td>user2@mail.com</td><td>12345</td><td>Apple</td><td>Components</td><td>There is no product that matches the search criteria.</td><td>Apple Cinema 30&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

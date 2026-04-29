@@ -1,10 +1,11 @@
 package base;
 
-import configuration.ConfigReader;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+
+import configuration.ConfigReader;
 
 public class BaseTest {
     protected WebDriver driver;

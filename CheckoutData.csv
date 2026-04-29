@@ -1,0 +1,3 @@
+email,password,category,productName,firstName,lastName,address,city,country,region,comment
+user2@mail.com,12345,Desktops,HP LP3065,Jane,Smith,Alexandria,Alexandria,Egypt,Al Iskandariyah,Test order 2
+user2@mail.com,12345,MP3 Players,iPod Shuffle,John,Doe,Cairo,Cairo,Egypt,Al Qahirah,Test order 1

@@ -1,9 +1,17 @@
-C:\Users\sabousenna\Desktop\FCAI\Software Testing\SeleniumLab\src\test\java\base\BaseTest.java
-C:\Users\sabousenna\Desktop\FCAI\Software Testing\SeleniumLab\src\test\java\configuration\ConfigReader.java
-C:\Users\sabousenna\Desktop\FCAI\Software Testing\SeleniumLab\src\test\java\configuration\CSVUtils.java
-C:\Users\sabousenna\Desktop\FCAI\Software Testing\SeleniumLab\src\test\java\pages\AccountPage.java
-C:\Users\sabousenna\Desktop\FCAI\Software Testing\SeleniumLab\src\test\java\pages\HomePage.java
-C:\Users\sabousenna\Desktop\FCAI\Software Testing\SeleniumLab\src\test\java\pages\LoginPage.java
-C:\Users\sabousenna\Desktop\FCAI\Software Testing\SeleniumLab\src\test\java\pages\RegisterPage.java
-C:\Users\sabousenna\Desktop\FCAI\Software Testing\SeleniumLab\src\test\java\tests\LoginTests.java
-C:\Users\sabousenna\Desktop\FCAI\Software Testing\SeleniumLab\src\test\java\tests\RegistrationTests.java
+E:\FCAI\Senior_Year\Second Semester\SW Testing\Testing-Assignment2-part-A\src\test\java\base\BaseTest.java
+E:\FCAI\Senior_Year\Second Semester\SW Testing\Testing-Assignment2-part-A\src\test\java\configuration\ConfigReader.java
+E:\FCAI\Senior_Year\Second Semester\SW Testing\Testing-Assignment2-part-A\src\test\java\configuration\CSVUtils.java
+E:\FCAI\Senior_Year\Second Semester\SW Testing\Testing-Assignment2-part-A\src\test\java\pages\AccountPage.java
+E:\FCAI\Senior_Year\Second Semester\SW Testing\Testing-Assignment2-part-A\src\test\java\pages\CurrencyPage.java
+E:\FCAI\Senior_Year\Second Semester\SW Testing\Testing-Assignment2-part-A\src\test\java\pages\HomePage.java
+E:\FCAI\Senior_Year\Second Semester\SW Testing\Testing-Assignment2-part-A\src\test\java\pages\LoginPage.java
+E:\FCAI\Senior_Year\Second Semester\SW Testing\Testing-Assignment2-part-A\src\test\java\pages\ProductPage.java
+E:\FCAI\Senior_Year\Second Semester\SW Testing\Testing-Assignment2-part-A\src\test\java\pages\RegisterPage.java
+E:\FCAI\Senior_Year\Second Semester\SW Testing\Testing-Assignment2-part-A\src\test\java\pages\SearchPage.java
+E:\FCAI\Senior_Year\Second Semester\SW Testing\Testing-Assignment2-part-A\src\test\java\pages\ShoppingCartPage.java
+E:\FCAI\Senior_Year\Second Semester\SW Testing\Testing-Assignment2-part-A\src\test\java\tests\CheckoutTests.java
+E:\FCAI\Senior_Year\Second Semester\SW Testing\Testing-Assignment2-part-A\src\test\java\tests\CurrencyTests.java
+E:\FCAI\Senior_Year\Second Semester\SW Testing\Testing-Assignment2-part-A\src\test\java\tests\LoginTests.java
+E:\FCAI\Senior_Year\Second Semester\SW Testing\Testing-Assignment2-part-A\src\test\java\tests\ProductTests.java
+E:\FCAI\Senior_Year\Second Semester\SW Testing\Testing-Assignment2-part-A\src\test\java\tests\RegistrationTests.java
+E:\FCAI\Senior_Year\Second Semester\SW Testing\Testing-Assignment2-part-A\src\test\java\tests\SearchTests.java

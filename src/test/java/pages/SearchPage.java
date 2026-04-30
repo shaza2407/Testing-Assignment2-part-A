@@ -13,7 +13,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class SearchPage {
 
     WebDriver driver;
-
     By searchInput  = By.name("search");
     By searchButtonIcon = By.cssSelector("button.btn.btn-default.btn-lg");
     By productNames = By.cssSelector(".product-thumb h4 a");
@@ -28,13 +27,19 @@ public class SearchPage {
         this.driver = driver;
     }
 
+
+
     public void search(String keyword) {
         driver.findElement(searchInput).clear();
         driver.findElement(searchInput).sendKeys(keyword);
         driver.findElement(searchButtonIcon).click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h2[contains(text(), 'Products meeting the search criteria')]")));
     }
     public void searchButtonClick(){
         driver.findElement(searchButton).click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.textToBePresentInElementLocated(By.cssSelector("ul.breadcrumb"), "Search"));
     }
     public void searchButtonIconClick(){
         driver.findElement(searchButtonIcon).click();

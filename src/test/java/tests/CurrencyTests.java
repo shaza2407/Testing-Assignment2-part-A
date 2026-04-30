@@ -31,19 +31,16 @@ public class CurrencyTests extends BaseTest{
         LoginPage login = new LoginPage(driver);
         login.login(email, password);            //log in with email and password
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
-        wait.until(ExpectedConditions.urlContains("account"));
-
         ProductPage product = new ProductPage(driver);
         product.goToDesktops();                     //go to all desktops
 
         CurrencyPage currency = new CurrencyPage(driver);
-        currency.changeCurrency();
+        currency.changeCurrency();              //change currency to euro
 
-        Assert.assertTrue(currency.isEuroSignDisplayed());
+        Assert.assertTrue(currency.isEuroSignDisplayed());  //assert true if euro sign is displayed
 
          AccountPage account = new AccountPage(driver);
-         account.logOut();
+         account.logOut();              //logout
     }
 
 }

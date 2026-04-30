@@ -1,9 +1,4 @@
 package tests;
-
-import java.time.Duration;
-
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -15,14 +10,14 @@ import pages.HomePage;
 import pages.LoginPage;
 import pages.SearchPage;
 
-// Scenario 7:
+// Scenario 8:
 // 1- Login by any valid user
 // 2- Enter any name in "search" input box (Ex: "Mac")
 // 3- Click on "Search"
 // 4- All Mac products displayed (means all product's names contain "Mac")
 // 5- Log out
 
-//scenario 8
+//scenario 9:
 //1- Login by any valid user
 //2- Click on "Search" icon
 //3- Enter "Apple" in Search Keyword
@@ -33,9 +28,9 @@ import pages.SearchPage;
 //8- Log out
 
 public class SearchTests extends BaseTest {
-    @DataProvider(name = "validUser")
+    @DataProvider(name = "SearchData")
     public Object[][] getData() throws Exception {
-        return CSVUtils.getTestData("validUser.csv");
+        return CSVUtils.getTestData("SearchData.csv");
     }
     @DataProvider(name = "SearchSubcategoryData")
     public Object[][] getSearchSubcategoryData() throws Exception {
@@ -43,20 +38,18 @@ public class SearchTests extends BaseTest {
     }
 
 
-    @Test(dataProvider = "validUser")
-    public void searchTest(String email, String password) {
+    @Test(dataProvider = "SearchData")
+    public void searchTest(String email, String password , String productName) {
         HomePage home = new HomePage(driver);
         home.goToLogin();
 
-        LoginPage login = new LoginPage(driver);            //log in with email and password
-        login.login(email, password);
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        wait.until(ExpectedConditions.urlContains("account"));      //wait until logged in
+        LoginPage login = new LoginPage(driver);
+        login.login(email, password);            //log in with email and password
 
         SearchPage search = new SearchPage(driver);
-        search.search("Mac");           //search for "Mac"
+        search.search(productName);           //search for "Mac"
 
-        Assert.assertTrue(search.allProductsContain("Mac"), "Not all products contain 'Mac'");  //check if all products contain "Mac"
+        Assert.assertTrue(search.allProductsContain(productName), "Not all products contain " + productName);  //check if all products contain "Mac"
 
         AccountPage account = new AccountPage(driver);          //logout
         account.logOut();
@@ -70,24 +63,22 @@ public class SearchTests extends BaseTest {
         SearchPage search = new SearchPage(driver);
         AccountPage account = new AccountPage(driver);
 
+
         home.goToLogin();
-        login.login(email, password);
+        login.login(email, password);               //log in with a valid user
 
-        search.searchButtonIconClick();
+        search.search(searchTerm);              //click on search icon and enter search for search term
+        search.selectCategory(category);        //select category
+        search.searchButtonClick();             //click on search button
 
-        search.keywordsInputClick(searchTerm);
-        search.selectCategory(category);
-        
-        search.searchButtonClick();
+        Assert.assertEquals(search.getResultMessage(), expectedNoProductMsg);  //check if no products found
 
-        Assert.assertEquals(search.getResultMessage(), expectedNoProductMsg);
-
-        search.subCategoryClick();
-        search.searchButtonClick();
+        search.subCategoryClick();              //click on "Search in subcategories"
+        search.searchButtonClick();             //click on search button
        
-        Assert.assertTrue(search.isProductDisplayed(), expectedProduct + " was not found on the page.");
+        Assert.assertTrue(search.isProductDisplayed(), expectedProduct + " was not found on the page.");        //check if product is displayed
 
-        account.logOut();
+        account.logOut();           //logout
     }
 
     

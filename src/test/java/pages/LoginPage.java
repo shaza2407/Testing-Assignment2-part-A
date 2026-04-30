@@ -18,6 +18,7 @@ public class LoginPage {
     By errorMessage = By.cssSelector(".alert.alert-danger");
     By logoutBtn = By.cssSelector("a[href*='route=account/logout']");
     By myAccount = By.linkText("My Account");
+
     public LoginPage(WebDriver driver){
         this.driver = driver;
     }
@@ -26,6 +27,8 @@ public class LoginPage {
         driver.findElement(email).sendKeys(user);
         driver.findElement(password).sendKeys(pass);
         driver.findElement(loginBtn).click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Wish List")));
     }
 
     public boolean isLoggedIn() {

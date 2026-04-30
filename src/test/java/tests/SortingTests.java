@@ -10,16 +10,20 @@ import pages.AccountPage;
 import pages.HomePage;
 import pages.LoginPage;
 import pages.ProductPage;
-
+//scenario 7
+//1- Login by any valid user
+//2- Click on "Phones & PDAs"
+//3- Sort by name "A--Z"
+//4- The items sorted alphapitcaly ascending
+//5- Sort by name "Z--A"
+//6-The items sorted alphapitcaly descending
+//7- Log out
 public class SortingTests extends BaseTest {
-
-    // 1. DataProvider to read sorting configurations
     @DataProvider(name = "SortingData")
     public Object[][] getData() throws Exception {
         return CSVUtils.getTestData("SortingData.csv"); 
     }
 
-    // 2. Data-driven test passing all values dynamically
     @Test(dataProvider = "SortingData")
     public void sortProductsTest(String email, String password, String category, String sortOptionVisibleText) {
 
@@ -27,20 +31,16 @@ public class SortingTests extends BaseTest {
         LoginPage login = new LoginPage(driver);
         ProductPage product = new ProductPage(driver);
         AccountPage account = new AccountPage(driver);
-        // Step 1: Login
+
         home.goToLogin();
-        login.login(email, password);
+        login.login(email, password);           //log in with email and password
 
-        // Step 2: Navigate dynamically to the category (e.g., Phones & PDAs, Desktops)
-        home.goToCategory(category);
+        product.goToCategory(category);            // Click on category ->"Phones & PDAs"
 
-        // Step 3: Select the sort option dynamically based on CSV data
-        product.selectSortByDynamic(sortOptionVisibleText);
+        product.selectSortByDynamic(sortOptionVisibleText);     //sort by sorting choice, A-Z or Z-A
 
-        // Step 4: Verify the selected option matches what we passed
-        Assert.assertEquals(product.selectedOption(), sortOptionVisibleText);
+        Assert.assertEquals(product.selectedOption(), sortOptionVisibleText);   // assert if sorting option is selected is true
 
-        // Step 5: Log out to ensure a clean state for the next row of data
-        account.logOut();
+        account.logOut();       //logout
     }
 }

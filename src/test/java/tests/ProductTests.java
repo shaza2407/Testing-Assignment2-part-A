@@ -2,8 +2,7 @@ package tests;
 
 import base.BaseTest;
 import configuration.CSVUtils;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -25,15 +24,13 @@ public class ProductTests extends BaseTest {
         return CSVUtils.getTestData("validUser.csv");
     }
 
-    @Test(dataProvider = "validUser")
+    @Test(dataProvider = "validUser" )
     public void testLogin(String email, String password) {
         HomePage home = new HomePage(driver);
         home.goToLogin();                          //go to My Account -> login
 
         LoginPage login = new LoginPage(driver);
         login.login(email, password);            //log in with email and password
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
-        wait.until(ExpectedConditions.urlContains("account"));
 
         ProductPage product = new ProductPage(driver);
         product.goToTablets();                      //go to all tablets

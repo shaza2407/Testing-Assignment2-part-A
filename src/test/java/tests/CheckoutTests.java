@@ -8,11 +8,31 @@ import base.BaseTest;
 import configuration.CSVUtils;
 import pages.HomePage;
 import pages.LoginPage;
+import pages.ProductPage;
 import pages.ShoppingCartPage;
+//scenario 11
+//1- Login by any valid user
+//2- Click on "MP3 Players" -->"Show all MP3 Players"
+//3- Add "ipod shuffle" to the cart
+//4- Info message "Success: You have added "ipod shuffle"to your shopping cart!"
+//5- Open shopping cart and check on the item added & it's price
+//6- Click on "View Cart" to check on that  "ipod shuffle " added
+//7- Click on "Checkout" button
+//8- Fill billing details by new address
+//9- Check on Address drop down filled by new address
+//10-Click "continue"
+//11- Shipping details  section will open so choose  the new details added and Click "continue"
+//12- Delivery method section will open
+//13- Add Comment & Click on "Continue"
+//14-Payment method section will appear so check on "Terms & conditions" Click on "Continue" button
+//15- "Confirm order" section will appear  with the same prices as in shopping cart
+//16- Total price includes the "Flat shipping rate"
+//17- Click on "Confirm Order" button
+//18- "Your order has been placed!" message displayed & 0 items found in the small Shopping cart
+//19- Log out
 
 public class CheckoutTests extends BaseTest {
 
-    // 1. Set up the DataProvider to read from your CSV file
     @DataProvider(name = "CheckoutData")
     public Object[][] getData() throws Exception {
         return CSVUtils.getTestData("CheckoutData.csv"); 
@@ -26,6 +46,7 @@ public class CheckoutTests extends BaseTest {
 
         HomePage home = new HomePage(driver);
         LoginPage login = new LoginPage(driver);
+        ProductPage pr = new ProductPage(driver);
         ShoppingCartPage shoppingCart = new ShoppingCartPage(driver);
 
         // Step 1: Login by any valid user
@@ -33,8 +54,8 @@ public class CheckoutTests extends BaseTest {
         login.login(email, password); // Using dynamic data
 
         // Steps 2 & 3: Navigate to products and add to cart
-        // home.goToDesktops(); 
-        home.goToCategory(category);        
+        // home.goToDesktops();
+        pr.goToCategory(category);
         shoppingCart.addToCartAction(productName,category);
 
         // shoppingCart.addToCart();
@@ -43,7 +64,7 @@ public class CheckoutTests extends BaseTest {
         Assert.assertTrue(shoppingCart.getSuccessMsg().contains(productName));
 
         // Steps 5 & 6: Open shopping cart and check item details
-        home.goToShoppingCart();
+        pr.goToShoppingCart();
         String[] product = shoppingCart.getProductDetails(productName);
         Assert.assertEquals(product[0], productName);
 
@@ -67,7 +88,7 @@ public class CheckoutTests extends BaseTest {
         shoppingCart.clickContinue(step, "address");
 
         // Steps 12 & 13: Delivery method and Comment
-        shoppingCart.enterComment(comment);        
+        shoppingCart.enterComment(comment);
         String flatShippingRate = shoppingCart.getFlatShippingRate();
 
         shoppingCart.clickContinue(step, "method");
@@ -96,7 +117,7 @@ public class CheckoutTests extends BaseTest {
         
         // Optional Step (from your old code): Verify Cart is Empty after order
         shoppingCart.clickContinueBtn();
-        home.goToShoppingCart();
+        pr.goToShoppingCart();
         Assert.assertEquals(shoppingCart.getEmptyCartMessage(), "Your shopping cart is empty!");
     }
 }

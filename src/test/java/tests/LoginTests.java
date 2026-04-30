@@ -35,13 +35,10 @@ public class LoginTests extends BaseTest {
 
         LoginPage login = new LoginPage(driver);
         login.login(email, password);            //log in with email and password
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
 
         if (expected.equals("valid")) {           //confirm user is logged in
-            wait.until(ExpectedConditions.urlContains("account"));
             Assert.assertTrue(login.isLoggedIn());
         } else {
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".alert.alert-danger")));
             Assert.assertTrue(login.getErrorMessage().contains("Warning: No match for E-Mail Address and/or Password."));
         }
     }

@@ -18,7 +18,7 @@ import java.util.List;
 //3-Accept the agreement
 //4- Click on "Continue"
 //5- Check on this message "Your Account Has Been Created!"
-//6- Check on existense of  "LogOut" in  "My Account" menu
+//6- Check on existense of "LogOut" in "My Account" menu
 //7- Log out of the system
 
 public class RegistrationTests extends BaseTest {

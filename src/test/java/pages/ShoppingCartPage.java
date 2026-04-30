@@ -40,10 +40,7 @@ public class ShoppingCartPage {
     private WebElement findProductCard(String productName) {
 
         for (WebElement product : driver.findElements(By.cssSelector(".product-thumb"))) {
-
-            if (product.findElement(By.cssSelector("h4 a"))
-                    .getText()
-                    .equals(productName)) {
+            if (product.findElement(By.cssSelector("h4 a")).getText().equals(productName)) {
                 return product;
             }
         }
@@ -74,7 +71,7 @@ public class ShoppingCartPage {
         wait.until(ExpectedConditions.elementToBeClickable(product.findElement(By.cssSelector("button[onclick*='cart.add']")))).click();
 
         switch (category) {
-            case "Desktops" -> {
+            case "Desktops"  -> {
                 if (deliveryDate != null && !deliveryDate.isEmpty()) {
                     setDeliveryDate(deliveryDate);
                 }

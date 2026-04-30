@@ -25,9 +25,7 @@ public class CurrencyPage {
         driver.findElement(currency).click();
         driver.findElement(euro).click();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        wait.until(ExpectedConditions.textToBePresentInElementLocated(
-                By.cssSelector("button.btn.btn-link.dropdown-toggle strong"), "€"
-        ));
+        wait.until(ExpectedConditions.textToBePresentInElementLocated(By.cssSelector("button.btn.btn-link.dropdown-toggle strong"), "€"));
     }
 
     public boolean isEuroSignDisplayed() {

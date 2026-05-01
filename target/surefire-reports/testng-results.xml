@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-01T05:30:47 EEST" name="Surefire suite" finished-at="2026-05-01T05:33:35 EEST" duration-ms="168720">
+  <suite started-at="2026-05-01T12:45:23 EEST" name="Surefire suite" finished-at="2026-05-01T12:48:32 EEST" duration-ms="188800">
     <groups>
     </groups>
-    <test started-at="2026-05-01T05:30:47 EEST" name="Surefire test" finished-at="2026-05-01T05:33:35 EEST" duration-ms="168720">
+    <test started-at="2026-05-01T12:45:23 EEST" name="Surefire test" finished-at="2026-05-01T12:48:32 EEST" duration-ms="188800">
       <class name="tests.ShoppingCartTests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ShoppingCartTests@5fd4f8f5]" started-at="2026-05-01T05:30:57 EEST" name="setup" finished-at="2026-05-01T05:31:01 EEST" duration-ms="4257" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ShoppingCartTests@5fd4f8f5]" started-at="2026-05-01T12:45:34 EEST" name="setup" finished-at="2026-05-01T12:45:36 EEST" duration-ms="2604" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="shoppingCartTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.ShoppingCartTests@5fd4f8f5]" started-at="2026-05-01T05:31:01 EEST" name="shoppingCartTest" data-provider="ShoppingCartData" finished-at="2026-05-01T05:31:13 EEST" duration-ms="12188" status="PASS">
+        <test-method signature="shoppingCartTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.ShoppingCartTests@5fd4f8f5]" started-at="2026-05-01T12:45:36 EEST" name="shoppingCartTest" data-provider="ShoppingCartData" finished-at="2026-05-01T12:45:46 EEST" duration-ms="10292" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -52,17 +52,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shoppingCartTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.ShoppingCartTests@5fd4f8f5]" started-at="2026-05-01T05:31:13 EEST" name="teardown" finished-at="2026-05-01T05:31:13 EEST" duration-ms="86" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.ShoppingCartTests@5fd4f8f5]" started-at="2026-05-01T12:45:46 EEST" name="teardown" finished-at="2026-05-01T12:45:47 EEST" duration-ms="86" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- tests.ShoppingCartTests -->
       <class name="tests.LoginTests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTests@2f8dad04]" started-at="2026-05-01T05:32:48 EEST" name="setup" finished-at="2026-05-01T05:32:51 EEST" duration-ms="2358" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTests@2f8dad04]" started-at="2026-05-01T12:47:31 EEST" name="setup" finished-at="2026-05-01T12:47:38 EEST" duration-ms="7146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTests@2f8dad04]" started-at="2026-05-01T05:32:51 EEST" name="testLogin" data-provider="loginData" finished-at="2026-05-01T05:32:55 EEST" duration-ms="4616" status="PASS">
+        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTests@2f8dad04]" started-at="2026-05-01T12:47:38 EEST" name="testLogin" data-provider="loginData" finished-at="2026-05-01T12:47:41 EEST" duration-ms="2935" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -83,15 +83,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.LoginTests@2f8dad04]" started-at="2026-05-01T05:32:55 EEST" name="teardown" finished-at="2026-05-01T05:32:56 EEST" duration-ms="83" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.LoginTests@2f8dad04]" started-at="2026-05-01T12:47:41 EEST" name="teardown" finished-at="2026-05-01T12:47:42 EEST" duration-ms="83" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTests@2f8dad04]" started-at="2026-05-01T05:32:56 EEST" name="setup" finished-at="2026-05-01T05:32:59 EEST" duration-ms="3710" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTests@2f8dad04]" started-at="2026-05-01T12:47:42 EEST" name="setup" finished-at="2026-05-01T12:47:49 EEST" duration-ms="7853" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTests@2f8dad04]" started-at="2026-05-01T05:32:59 EEST" name="testLogin" data-provider="loginData" finished-at="2026-05-01T05:33:01 EEST" duration-ms="2152" status="PASS">
+        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTests@2f8dad04]" started-at="2026-05-01T12:47:49 EEST" name="testLogin" data-provider="loginData" finished-at="2026-05-01T12:47:55 EEST" duration-ms="6090" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -112,15 +112,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.LoginTests@2f8dad04]" started-at="2026-05-01T05:33:01 EEST" name="teardown" finished-at="2026-05-01T05:33:02 EEST" duration-ms="89" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.LoginTests@2f8dad04]" started-at="2026-05-01T12:47:55 EEST" name="teardown" finished-at="2026-05-01T12:47:56 EEST" duration-ms="84" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTests@2f8dad04]" started-at="2026-05-01T05:33:02 EEST" name="setup" finished-at="2026-05-01T05:33:05 EEST" duration-ms="3793" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTests@2f8dad04]" started-at="2026-05-01T12:47:56 EEST" name="setup" finished-at="2026-05-01T12:48:00 EEST" duration-ms="4513" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTests@2f8dad04]" started-at="2026-05-01T05:33:05 EEST" name="testLogin" data-provider="loginData" finished-at="2026-05-01T05:33:08 EEST" duration-ms="2272" status="PASS">
+        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTests@2f8dad04]" started-at="2026-05-01T12:48:00 EEST" name="testLogin" data-provider="loginData" finished-at="2026-05-01T12:48:03 EEST" duration-ms="3240" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -141,15 +141,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.LoginTests@2f8dad04]" started-at="2026-05-01T05:33:08 EEST" name="teardown" finished-at="2026-05-01T05:33:08 EEST" duration-ms="85" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.LoginTests@2f8dad04]" started-at="2026-05-01T12:48:03 EEST" name="teardown" finished-at="2026-05-01T12:48:03 EEST" duration-ms="83" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTests@2f8dad04]" started-at="2026-05-01T05:33:08 EEST" name="setup" finished-at="2026-05-01T05:33:12 EEST" duration-ms="4004" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTests@2f8dad04]" started-at="2026-05-01T12:48:03 EEST" name="setup" finished-at="2026-05-01T12:48:07 EEST" duration-ms="3819" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTests@2f8dad04]" started-at="2026-05-01T05:33:12 EEST" name="testLogin" data-provider="loginData" finished-at="2026-05-01T05:33:14 EEST" duration-ms="2502" status="PASS">
+        <test-method signature="testLogin(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTests@2f8dad04]" started-at="2026-05-01T12:48:07 EEST" name="testLogin" data-provider="loginData" finished-at="2026-05-01T12:48:10 EEST" duration-ms="2667" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -170,17 +170,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.LoginTests@2f8dad04]" started-at="2026-05-01T05:33:14 EEST" name="teardown" finished-at="2026-05-01T05:33:14 EEST" duration-ms="88" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.LoginTests@2f8dad04]" started-at="2026-05-01T12:48:10 EEST" name="teardown" finished-at="2026-05-01T12:48:10 EEST" duration-ms="81" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- tests.LoginTests -->
       <class name="tests.RegistrationTests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.RegistrationTests@29e495ff]" started-at="2026-05-01T05:33:14 EEST" name="setup" finished-at="2026-05-01T05:33:18 EEST" duration-ms="4125" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.RegistrationTests@29e495ff]" started-at="2026-05-01T12:48:10 EEST" name="setup" finished-at="2026-05-01T12:48:15 EEST" duration-ms="4706" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="registrationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.RegistrationTests@29e495ff]" started-at="2026-05-01T05:33:18 EEST" name="registrationTest" data-provider="RegisterData" finished-at="2026-05-01T05:33:23 EEST" duration-ms="4274" status="PASS">
+        <test-method signature="registrationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.RegistrationTests@29e495ff]" started-at="2026-05-01T12:48:15 EEST" name="registrationTest" data-provider="RegisterData" finished-at="2026-05-01T12:48:18 EEST" duration-ms="3830" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -216,15 +216,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrationTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.RegistrationTests@29e495ff]" started-at="2026-05-01T05:33:23 EEST" name="teardown" finished-at="2026-05-01T05:33:23 EEST" duration-ms="84" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.RegistrationTests@29e495ff]" started-at="2026-05-01T12:48:18 EEST" name="teardown" finished-at="2026-05-01T12:48:19 EEST" duration-ms="85" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.RegistrationTests@29e495ff]" started-at="2026-05-01T05:33:23 EEST" name="setup" finished-at="2026-05-01T05:33:25 EEST" duration-ms="2699" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.RegistrationTests@29e495ff]" started-at="2026-05-01T12:48:19 EEST" name="setup" finished-at="2026-05-01T12:48:22 EEST" duration-ms="3754" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="registrationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.RegistrationTests@29e495ff]" started-at="2026-05-01T05:33:25 EEST" name="registrationTest" data-provider="RegisterData" finished-at="2026-05-01T05:33:29 EEST" duration-ms="3477" status="PASS">
+        <test-method signature="registrationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.RegistrationTests@29e495ff]" started-at="2026-05-01T12:48:22 EEST" name="registrationTest" data-provider="RegisterData" finished-at="2026-05-01T12:48:25 EEST" duration-ms="2593" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -260,15 +260,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrationTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.RegistrationTests@29e495ff]" started-at="2026-05-01T05:33:29 EEST" name="teardown" finished-at="2026-05-01T05:33:29 EEST" duration-ms="84" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.RegistrationTests@29e495ff]" started-at="2026-05-01T12:48:25 EEST" name="teardown" finished-at="2026-05-01T12:48:25 EEST" duration-ms="83" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.RegistrationTests@29e495ff]" started-at="2026-05-01T05:33:29 EEST" name="setup" finished-at="2026-05-01T05:33:33 EEST" duration-ms="3778" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.RegistrationTests@29e495ff]" started-at="2026-05-01T12:48:25 EEST" name="setup" finished-at="2026-05-01T12:48:29 EEST" duration-ms="4178" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="registrationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.RegistrationTests@29e495ff]" started-at="2026-05-01T05:33:33 EEST" name="registrationTest" data-provider="RegisterData" finished-at="2026-05-01T05:33:35 EEST" duration-ms="2384" status="PASS">
+        <test-method signature="registrationTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.RegistrationTests@29e495ff]" started-at="2026-05-01T12:48:29 EEST" name="registrationTest" data-provider="RegisterData" finished-at="2026-05-01T12:48:32 EEST" duration-ms="2687" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -304,17 +304,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrationTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.RegistrationTests@29e495ff]" started-at="2026-05-01T05:33:35 EEST" name="teardown" finished-at="2026-05-01T05:33:35 EEST" duration-ms="84" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.RegistrationTests@29e495ff]" started-at="2026-05-01T12:48:32 EEST" name="teardown" finished-at="2026-05-01T12:48:32 EEST" duration-ms="86" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- tests.RegistrationTests -->
       <class name="tests.SortingTests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SortingTests@53976f5c]" started-at="2026-05-01T05:31:53 EEST" name="setup" finished-at="2026-05-01T05:31:58 EEST" duration-ms="4315" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SortingTests@53976f5c]" started-at="2026-05-01T12:46:28 EEST" name="setup" finished-at="2026-05-01T12:46:32 EEST" duration-ms="4714" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="sortProductsTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SortingTests@53976f5c]" started-at="2026-05-01T05:31:58 EEST" name="sortProductsTest" data-provider="SortingData" finished-at="2026-05-01T05:32:02 EEST" duration-ms="4729" status="PASS">
+        <test-method signature="sortProductsTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SortingTests@53976f5c]" started-at="2026-05-01T12:46:32 EEST" name="sortProductsTest" data-provider="SortingData" finished-at="2026-05-01T12:46:41 EEST" duration-ms="8612" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -340,15 +340,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sortProductsTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.SortingTests@53976f5c]" started-at="2026-05-01T05:32:02 EEST" name="teardown" finished-at="2026-05-01T05:32:03 EEST" duration-ms="81" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.SortingTests@53976f5c]" started-at="2026-05-01T12:46:41 EEST" name="teardown" finished-at="2026-05-01T12:46:41 EEST" duration-ms="85" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SortingTests@53976f5c]" started-at="2026-05-01T05:32:03 EEST" name="setup" finished-at="2026-05-01T05:32:07 EEST" duration-ms="4079" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SortingTests@53976f5c]" started-at="2026-05-01T12:46:41 EEST" name="setup" finished-at="2026-05-01T12:46:48 EEST" duration-ms="6558" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="sortProductsTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SortingTests@53976f5c]" started-at="2026-05-01T05:32:07 EEST" name="sortProductsTest" data-provider="SortingData" finished-at="2026-05-01T05:32:12 EEST" duration-ms="4869" status="PASS">
+        <test-method signature="sortProductsTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SortingTests@53976f5c]" started-at="2026-05-01T12:46:48 EEST" name="sortProductsTest" data-provider="SortingData" finished-at="2026-05-01T12:46:55 EEST" duration-ms="7760" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -374,17 +374,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sortProductsTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.SortingTests@53976f5c]" started-at="2026-05-01T05:32:12 EEST" name="teardown" finished-at="2026-05-01T05:32:12 EEST" duration-ms="83" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.SortingTests@53976f5c]" started-at="2026-05-01T12:46:55 EEST" name="teardown" finished-at="2026-05-01T12:46:56 EEST" duration-ms="84" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- tests.SortingTests -->
       <class name="tests.SearchTests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SearchTests@4e7912d8]" started-at="2026-05-01T05:31:24 EEST" name="setup" finished-at="2026-05-01T05:31:26 EEST" duration-ms="2384" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SearchTests@4e7912d8]" started-at="2026-05-01T12:45:57 EEST" name="setup" finished-at="2026-05-01T12:46:01 EEST" duration-ms="3802" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="searchInSubcategoriesTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SearchTests@4e7912d8]" started-at="2026-05-01T05:31:26 EEST" name="searchInSubcategoriesTest" data-provider="SearchSubcategoryData" finished-at="2026-05-01T05:31:34 EEST" duration-ms="8177" status="PASS">
+        <test-method signature="searchInSubcategoriesTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SearchTests@4e7912d8]" started-at="2026-05-01T12:46:01 EEST" name="searchInSubcategoriesTest" data-provider="SearchSubcategoryData" finished-at="2026-05-01T12:46:08 EEST" duration-ms="6795" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -420,15 +420,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchInSubcategoriesTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.SearchTests@4e7912d8]" started-at="2026-05-01T05:31:34 EEST" name="teardown" finished-at="2026-05-01T05:31:35 EEST" duration-ms="87" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.SearchTests@4e7912d8]" started-at="2026-05-01T12:46:08 EEST" name="teardown" finished-at="2026-05-01T12:46:08 EEST" duration-ms="84" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SearchTests@4e7912d8]" started-at="2026-05-01T05:31:35 EEST" name="setup" finished-at="2026-05-01T05:31:39 EEST" duration-ms="4342" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SearchTests@4e7912d8]" started-at="2026-05-01T12:46:08 EEST" name="setup" finished-at="2026-05-01T12:46:12 EEST" duration-ms="4384" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="searchTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SearchTests@4e7912d8]" started-at="2026-05-01T05:31:39 EEST" name="searchTest" data-provider="SearchData" finished-at="2026-05-01T05:31:45 EEST" duration-ms="6416" status="PASS">
+        <test-method signature="searchTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SearchTests@4e7912d8]" started-at="2026-05-01T12:46:12 EEST" name="searchTest" data-provider="SearchData" finished-at="2026-05-01T12:46:19 EEST" duration-ms="6615" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -449,15 +449,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.SearchTests@4e7912d8]" started-at="2026-05-01T05:31:45 EEST" name="teardown" finished-at="2026-05-01T05:31:45 EEST" duration-ms="87" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.SearchTests@4e7912d8]" started-at="2026-05-01T12:46:19 EEST" name="teardown" finished-at="2026-05-01T12:46:19 EEST" duration-ms="82" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SearchTests@4e7912d8]" started-at="2026-05-01T05:31:45 EEST" name="setup" finished-at="2026-05-01T05:31:49 EEST" duration-ms="3686" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.SearchTests@4e7912d8]" started-at="2026-05-01T12:46:19 EEST" name="setup" finished-at="2026-05-01T12:46:23 EEST" duration-ms="4022" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="searchTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SearchTests@4e7912d8]" started-at="2026-05-01T05:31:49 EEST" name="searchTest" data-provider="SearchData" finished-at="2026-05-01T05:31:53 EEST" duration-ms="4261" status="PASS">
+        <test-method signature="searchTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.SearchTests@4e7912d8]" started-at="2026-05-01T12:46:23 EEST" name="searchTest" data-provider="SearchData" finished-at="2026-05-01T12:46:28 EEST" duration-ms="4889" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -478,17 +478,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.SearchTests@4e7912d8]" started-at="2026-05-01T05:31:53 EEST" name="teardown" finished-at="2026-05-01T05:31:53 EEST" duration-ms="85" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.SearchTests@4e7912d8]" started-at="2026-05-01T12:46:28 EEST" name="teardown" finished-at="2026-05-01T12:46:28 EEST" duration-ms="83" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- tests.SearchTests -->
       <class name="tests.CurrencyTests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CurrencyTests@696da30b]" started-at="2026-05-01T05:31:13 EEST" name="setup" finished-at="2026-05-01T05:31:17 EEST" duration-ms="3954" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CurrencyTests@696da30b]" started-at="2026-05-01T12:45:47 EEST" name="setup" finished-at="2026-05-01T12:45:51 EEST" duration-ms="4337" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:tests.CurrencyTests@696da30b]" started-at="2026-05-01T05:31:17 EEST" name="testLogin" data-provider="validUser" finished-at="2026-05-01T05:31:24 EEST" duration-ms="6450" status="PASS">
+        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:tests.CurrencyTests@696da30b]" started-at="2026-05-01T12:45:51 EEST" name="testLogin" data-provider="validUser" finished-at="2026-05-01T12:45:57 EEST" duration-ms="6008" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -504,17 +504,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.CurrencyTests@696da30b]" started-at="2026-05-01T05:31:24 EEST" name="teardown" finished-at="2026-05-01T05:31:24 EEST" duration-ms="86" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.CurrencyTests@696da30b]" started-at="2026-05-01T12:45:57 EEST" name="teardown" finished-at="2026-05-01T12:45:57 EEST" duration-ms="84" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- tests.CurrencyTests -->
       <class name="tests.CheckoutTests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CheckoutTests@2bfc268b]" started-at="2026-05-01T05:32:12 EEST" name="setup" finished-at="2026-05-01T05:32:16 EEST" duration-ms="4179" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CheckoutTests@2bfc268b]" started-at="2026-05-01T12:46:56 EEST" name="setup" finished-at="2026-05-01T12:47:00 EEST" duration-ms="4250" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="normalCheckoutProcessTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.CheckoutTests@2bfc268b]" started-at="2026-05-01T05:32:16 EEST" name="normalCheckoutProcessTest" data-provider="CheckoutData" finished-at="2026-05-01T05:32:38 EEST" duration-ms="22141" status="PASS">
+        <test-method signature="normalCheckoutProcessTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.CheckoutTests@2bfc268b]" started-at="2026-05-01T12:47:00 EEST" name="normalCheckoutProcessTest" data-provider="CheckoutData" finished-at="2026-05-01T12:47:20 EEST" duration-ms="20615" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -575,17 +575,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- normalCheckoutProcessTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.CheckoutTests@2bfc268b]" started-at="2026-05-01T05:32:38 EEST" name="teardown" finished-at="2026-05-01T05:32:48 EEST" duration-ms="10584" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.CheckoutTests@2bfc268b]" started-at="2026-05-01T12:47:20 EEST" name="teardown" finished-at="2026-05-01T12:47:31 EEST" duration-ms="10873" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- tests.CheckoutTests -->
       <class name="tests.ProductTests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ProductTests@40cb8df7]" started-at="2026-05-01T05:30:47 EEST" name="setup" finished-at="2026-05-01T05:30:51 EEST" duration-ms="4784" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ProductTests@40cb8df7]" started-at="2026-05-01T12:45:23 EEST" name="setup" finished-at="2026-05-01T12:45:28 EEST" duration-ms="4339" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:tests.ProductTests@40cb8df7]" started-at="2026-05-01T05:30:51 EEST" name="testLogin" data-provider="validUser" finished-at="2026-05-01T05:30:57 EEST" duration-ms="5357" status="PASS">
+        <test-method signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:tests.ProductTests@40cb8df7]" started-at="2026-05-01T12:45:28 EEST" name="testLogin" data-provider="validUser" finished-at="2026-05-01T12:45:33 EEST" duration-ms="5881" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -601,7 +601,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.ProductTests@40cb8df7]" started-at="2026-05-01T05:30:57 EEST" name="teardown" finished-at="2026-05-01T05:30:57 EEST" duration-ms="90" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.ProductTests@40cb8df7]" started-at="2026-05-01T12:45:33 EEST" name="teardown" finished-at="2026-05-01T12:45:34 EEST" duration-ms="89" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

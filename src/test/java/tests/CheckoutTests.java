@@ -6,15 +6,12 @@ import org.testng.annotations.Test;
 
 import base.BaseTest;
 import configuration.CSVUtils;
-import pages.HomePage;
-import pages.LoginPage;
-import pages.ProductPage;
-import pages.ShoppingCartPage;
+import pages.*;
 //scenario 11
 //1- Login by any valid user
 //2- Click on "MP3 Players" -->"Show all MP3 Players"
 //3- Add "ipod shuffle" to the cart
-//4- Info message "Success: You have added "ipod shuffle"to your shopping cart!"
+//4- Info message "Success: You have added "ipod shuffle" to your shopping cart!"
 //5- Open shopping cart and check on the item added & it's price
 //6- Click on "View Cart" to check on that  "ipod shuffle " added
 //7- Click on "Checkout" button
@@ -31,14 +28,13 @@ import pages.ShoppingCartPage;
 //18- "Your order has been placed!" message displayed & 0 items found in the small Shopping cart
 //19- Log out
 
+//test data cause failure: shazaaa@test.com,1234,MP3 Players,iPod Shuffle,John,Doe,Cairo,Cairo,Egypt,Al Dumyat,Test order 1
 public class CheckoutTests extends BaseTest {
 
     @DataProvider(name = "CheckoutData")
     public Object[][] getData() throws Exception {
         return CSVUtils.getTestData("CheckoutData.csv"); 
     }
-
-    // 2. Pass dynamic variables into the test method instead of hardcoding
     @Test(dataProvider = "CheckoutData")
     public void normalCheckoutProcessTest(String email, String password, String category, String productName, 
                                           String firstName, String lastName, String address, 
@@ -48,76 +44,77 @@ public class CheckoutTests extends BaseTest {
         LoginPage login = new LoginPage(driver);
         ProductPage pr = new ProductPage(driver);
         ShoppingCartPage shoppingCart = new ShoppingCartPage(driver);
+        AccountPage account = new AccountPage(driver);
 
-        // Step 1: Login by any valid user
-        home.goToLogin();
-        login.login(email, password); // Using dynamic data
+        home.goToLogin();                   //log in with email and password
+        login.login(email, password);
 
-        // Steps 2 & 3: Navigate to products and add to cart
-        // home.goToDesktops();
-        pr.goToCategory(category);
-        shoppingCart.addToCartAction(productName,category);
+        pr.goToCategory(category);          // Click on category ->"MP3 Players"
+        shoppingCart.addToCartAction(productName,category);   //add product to cart
 
-        // shoppingCart.addToCart();
+        Assert.assertTrue(shoppingCart.getSuccessMsg().contains(productName));      //check if success message is displayed
 
-        // Step 4: Verify Success Message
-        Assert.assertTrue(shoppingCart.getSuccessMsg().contains(productName));
-
-        // Steps 5 & 6: Open shopping cart and check item details
+        //steps 5
         pr.goToShoppingCart();
         String[] product = shoppingCart.getProductDetails(productName);
         Assert.assertEquals(product[0], productName);
 
-        // Step 7: Click Checkout
+        //steps 6:click on "View Cart" to check on that product added
+        shoppingCart.clickCart();
+        shoppingCart.clickViewCart();
+        String[] products = shoppingCart.getProductDetails(productName);
+        Assert.assertEquals(products[0], productName);
+
+
+        //step 7:click Checkout
         shoppingCart.clickCheckoutBtn();
 
-        // Steps 8-11: Billing & Shipping Details
-        String step = "payment";
-        shoppingCart.clickContinue(step, "address"); // Assuming billing address exists, just continue
-
-        step = "shipping";
+        //steps 8-11:billing &shipping Details
         shoppingCart.clickShippingRadioBtn();
-        
-        // Fill shipping details dynamically from CSV
-        shoppingCart.enterFirstName(firstName, step);
-        shoppingCart.enterLastName(lastName, step);
-        shoppingCart.enterAddress(address, step);
-        shoppingCart.enterCity(city, step);
-        shoppingCart.selectCountry(country, step);
-        shoppingCart.selectRegion(region, step);
-        shoppingCart.clickContinue(step, "address");
+        // Fill payment details
+        shoppingCart.enterFirstName(firstName);
+        shoppingCart.enterLastName(lastName);
+        shoppingCart.enterAddress(address);
+        shoppingCart.enterCity(city);
+        shoppingCart.selectCountry(country);
+        shoppingCart.selectRegion(region);
+        shoppingCart.clickContinue("payment", "address");
 
-        // Steps 12 & 13: Delivery method and Comment
+        shoppingCart.selectExistingShippingAddress(firstName, lastName,city);
+        shoppingCart.clickContinue("shipping", "address");
+
+        //steps 12 & 13: Delivery method and Comment
         shoppingCart.enterComment(comment);
         String flatShippingRate = shoppingCart.getFlatShippingRate();
+        shoppingCart.clickContinue("shipping", "method");
 
-        shoppingCart.clickContinue(step, "method");
-
-        // Step 14: Payment method and Terms
+        //step 14:payment method and Terms
         shoppingCart.clickTermsBtn();
         shoppingCart.clickContinue("payment", "method");
 
-        // Step 15: "Confirm order" section will appear with the same prices
+        //step 15: "Confirm order" section will appear with the same prices
         Assert.assertEquals(shoppingCart.getUnitPrice(productName), product[1]);
 
-        // Step 16: Total price includes the "Flat shipping rate"
+        //step 16:total price includes the "Flat shipping rate"
         String totalPrice = shoppingCart.getTotalPrice();
         
-        // Clean strings and calculate math dynamically
+        //clean strings and calculate math dynamically
         double productPrice = Double.parseDouble(product[1].replace("$", "").replace(",", ""));
         double flatShipping = Double.parseDouble(flatShippingRate.replace("$", "").replace(",", ""));
         double totalCalculated = productPrice + flatShipping;
         String finalTotal = "$" + String.format("%.2f", totalCalculated);
         
-        Assert.assertEquals(totalPrice, finalTotal);
+        Assert.assertEquals(totalPrice, finalTotal);            //check if total price is equal to calculated total price
 
-        // Steps 17 & 18: Click Confirm Order and check final message
+        //steps 17 & 18: Click Confirm Order and check final message
         shoppingCart.clickConfirmOrderBtn();
         Assert.assertEquals(shoppingCart.getSuccessHeaderMessage(), "Your order has been placed!");
-        
-        // Optional Step (from your old code): Verify Cart is Empty after order
+        //verify Cart is Empty after order
         shoppingCart.clickContinueBtn();
         pr.goToShoppingCart();
         Assert.assertEquals(shoppingCart.getEmptyCartMessage(), "Your shopping cart is empty!");
+        //step 19: log out
+        account.logOut();
+
     }
 }

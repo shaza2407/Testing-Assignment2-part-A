@@ -39,7 +39,7 @@ public class ShoppingCartTests extends BaseTest {
         login.login(email, password);           //log in with email and password
 
         product.goToCategory(category1);        // Click on category ->"Tablets"
-        cart.addToCartAction(product1,category1,deliveryDate);  // Add "Samsung Galaxy Tab 10.1" to the cart
+        cart.addToCartAction(product1, category1);  // Add "Samsung Galaxy Tab 10.1" to the cart
 
         Assert.assertTrue(cart.getSuccessMsg().contains(product1));  // Check if success message is displayed
 

@@ -30,7 +30,6 @@ public class AccountPage {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Logout")));
         driver.findElement(By.linkText("Logout")).click();
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Logout")));
-
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Login")));
     }
 }

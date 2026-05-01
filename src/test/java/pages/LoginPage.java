@@ -23,11 +23,11 @@ public class LoginPage {
         this.driver = driver;
     }
 
-    public void login(String user,String pass){
-        driver.findElement(email).sendKeys(user);
-        driver.findElement(password).sendKeys(pass);
-        driver.findElement(loginBtn).click();
+    public void login(String user, String pass) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(email)).sendKeys(user);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(password)).sendKeys(pass);
+        wait.until(ExpectedConditions.elementToBeClickable(loginBtn)).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Wish List")));
     }
 

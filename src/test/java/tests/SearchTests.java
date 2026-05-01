@@ -76,12 +76,8 @@ public class SearchTests extends BaseTest {
         search.subCategoryClick();              //click on "Search in subcategories"
         search.searchButtonClick();             //click on search button
        
-        Assert.assertTrue(search.isProductDisplayed(), expectedProduct + " was not found on the page.");        //check if product is displayed
+        Assert.assertTrue(search.isProductDisplayed(expectedProduct), expectedProduct + " was not found on the page.");        //check if product is displayed
 
         account.logOut();           //logout
     }
-
-    
-
-
 }

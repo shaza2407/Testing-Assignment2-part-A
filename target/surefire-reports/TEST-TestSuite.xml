@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="188.361" tests="16" errors="0" skipped="0" failures="7">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="169.024" tests="16" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/applecare/Desktop/Testing-Assignment2-part-A/target/test-classes:/Users/applecare/Desktop/Testing-Assignment2-part-A/target/classes:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-java/4.41.0/selenium-java-4.41.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-api/4.41.0/selenium-api-4.41.0.jar:/Users/applecare/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.41.0/selenium-chrome-driver-4.41.0.jar:/Users/applecare/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.41.0/selenium-chromium-driver-4.41.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-json/4.41.0/selenium-json-4.41.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.41.0/selenium-manager-4.41.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v143/4.41.0/selenium-devtools-v143-4.41.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v144/4.41.0/selenium-devtools-v144-4.41.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v145/4.41.0/selenium-devtools-v145-4.41.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.41.0/selenium-edge-driver-4.41.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.41.0/selenium-firefox-driver-4.41.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-http/4.41.0/selenium-http-4.41.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.41.0/selenium-ie-driver-4.41.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.41.0/selenium-remote-driver-4.41.0.jar:/Users/applecare/.m2/repository/com/google/guava/guava/33.5.0-jre/guava-33.5.0-jre.jar:/Users/applecare/.m2/repository/com/google/guava/failureaccess/1.0.3/failureaccess-1.0.3.jar:/Users/applecare/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/applecare/.m2/repository/com/google/errorprone/error_prone_annotations/2.41.0/error_prone_annotations-2.41.0.jar:/Users/applecare/.m2/repository/com/google/j2objc/j2objc-annotations/3.1/j2objc-annotations-3.1.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-api/1.59.0/opentelemetry-api-1.59.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-context/1.59.0/opentelemetry-context-1.59.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-common/1.59.0/opentelemetry-common-1.59.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.59.0/opentelemetry-exporter-logging-1.59.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.59.0/opentelemetry-sdk-common-1.59.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.59.0/opentelemetry-sdk-extension-autoconfigure-spi-1.59.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.59.0/opentelemetry-sdk-extension-autoconfigure-1.59.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.59.0/opentelemetry-sdk-trace-1.59.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.59.0/opentelemetry-sdk-1.59.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.59.0/opentelemetry-sdk-metrics-1.59.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.59.0/opentelemetry-sdk-logs-1.59.0.jar:/Users/applecare/.m2/repository/net/bytebuddy/byte-buddy/1.18.5/byte-buddy-1.18.5.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-os/4.41.0/selenium-os-4.41.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.41.0/selenium-safari-driver-4.41.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-support/4.41.0/selenium-support-4.41.0.jar:/Users/applecare/.m2/repository/org/testng/testng/7.12.0/testng-7.12.0.jar:/Users/applecare/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/applecare/.m2/repository/org/jcommander/jcommander/1.83/jcommander-1.83.jar:/Users/applecare/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/applecare/.m2/repository/io/qameta/allure/allure-testng/2.21.0/allure-testng-2.21.0.jar:/Users/applecare/.m2/repository/io/qameta/allure/allure-java-commons/2.21.0/allure-java-commons-2.21.0.jar:/Users/applecare/.m2/repository/io/qameta/allure/allure-model/2.21.0/allure-model-2.21.0.jar:/Users/applecare/.m2/repository/io/qameta/allure/allure-test-filter/2.21.0/allure-test-filter-2.21.0.jar:"/>
+    <property name="java.class.path" value="/Users/applecare/Desktop/Testing-Assignment2-part-A/target/test-classes:/Users/applecare/Desktop/Testing-Assignment2-part-A/target/classes:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-java/4.32.0/selenium-java-4.32.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-api/4.32.0/selenium-api-4.32.0.jar:/Users/applecare/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.32.0/selenium-chrome-driver-4.32.0.jar:/Users/applecare/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.32.0/selenium-chromium-driver-4.32.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-json/4.32.0/selenium-json-4.32.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.32.0/selenium-manager-4.32.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v134/4.32.0/selenium-devtools-v134-4.32.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v135/4.32.0/selenium-devtools-v135-4.32.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v136/4.32.0/selenium-devtools-v136-4.32.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.32.0/selenium-edge-driver-4.32.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.32.0/selenium-firefox-driver-4.32.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-http/4.32.0/selenium-http-4.32.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.32.0/selenium-ie-driver-4.32.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.32.0/selenium-remote-driver-4.32.0.jar:/Users/applecare/.m2/repository/com/google/guava/guava/33.4.8-jre/guava-33.4.8-jre.jar:/Users/applecare/.m2/repository/com/google/guava/failureaccess/1.0.3/failureaccess-1.0.3.jar:/Users/applecare/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/applecare/.m2/repository/com/google/errorprone/error_prone_annotations/2.36.0/error_prone_annotations-2.36.0.jar:/Users/applecare/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-api/1.49.0/opentelemetry-api-1.49.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-context/1.49.0/opentelemetry-context-1.49.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.49.0/opentelemetry-exporter-logging-1.49.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.49.0/opentelemetry-sdk-common-1.49.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.49.0/opentelemetry-sdk-extension-autoconfigure-spi-1.49.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.49.0/opentelemetry-sdk-extension-autoconfigure-1.49.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.49.0/opentelemetry-sdk-trace-1.49.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.49.0/opentelemetry-sdk-1.49.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.49.0/opentelemetry-sdk-metrics-1.49.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.49.0/opentelemetry-sdk-logs-1.49.0.jar:/Users/applecare/.m2/repository/net/bytebuddy/byte-buddy/1.17.5/byte-buddy-1.17.5.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-os/4.32.0/selenium-os-4.32.0.jar:/Users/applecare/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.32.0/selenium-safari-driver-4.32.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-support/4.32.0/selenium-support-4.32.0.jar:/Users/applecare/.m2/repository/org/testng/testng/7.12.0/testng-7.12.0.jar:/Users/applecare/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/applecare/.m2/repository/org/jcommander/jcommander/1.83/jcommander-1.83.jar:/Users/applecare/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/applecare/.m2/repository/io/qameta/allure/allure-testng/2.21.0/allure-testng-2.21.0.jar:/Users/applecare/.m2/repository/io/qameta/allure/allure-java-commons/2.21.0/allure-java-commons-2.21.0.jar:/Users/applecare/.m2/repository/io/qameta/allure/allure-model/2.21.0/allure-model-2.21.0.jar:/Users/applecare/.m2/repository/io/qameta/allure/allure-test-filter/2.21.0/allure-test-filter-2.21.0.jar:"/>
     <property name="java.vm.vendor" value="Homebrew"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
@@ -13,10 +13,10 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="EG"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/25.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/applecare/Desktop/Testing-Assignment2-part-A/target/surefire/surefirebooter-20260430110631033_3.jar /Users/applecare/Desktop/Testing-Assignment2-part-A/target/surefire 2026-04-30T11-06-30_986-jvmRun1 surefire-20260430110631033_1tmp surefire_0-20260430110631033_2tmp"/>
+    <property name="sun.java.command" value="/Users/applecare/Desktop/Testing-Assignment2-part-A/target/surefire/surefirebooter-20260501053046673_3.jar /Users/applecare/Desktop/Testing-Assignment2-part-A/target/surefire 2026-05-01T05-30-46_626-jvmRun1 surefire-20260501053046673_1tmp surefire_0-20260501053046673_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/Users/applecare/Desktop/Testing-Assignment2-part-A/target/test-classes:/Users/applecare/Desktop/Testing-Assignment2-part-A/target/classes:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-java/4.41.0/selenium-java-4.41.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-api/4.41.0/selenium-api-4.41.0.jar:/Users/applecare/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.41.0/selenium-chrome-driver-4.41.0.jar:/Users/applecare/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.41.0/selenium-chromium-driver-4.41.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-json/4.41.0/selenium-json-4.41.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.41.0/selenium-manager-4.41.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v143/4.41.0/selenium-devtools-v143-4.41.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v144/4.41.0/selenium-devtools-v144-4.41.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v145/4.41.0/selenium-devtools-v145-4.41.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.41.0/selenium-edge-driver-4.41.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.41.0/selenium-firefox-driver-4.41.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-http/4.41.0/selenium-http-4.41.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.41.0/selenium-ie-driver-4.41.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.41.0/selenium-remote-driver-4.41.0.jar:/Users/applecare/.m2/repository/com/google/guava/guava/33.5.0-jre/guava-33.5.0-jre.jar:/Users/applecare/.m2/repository/com/google/guava/failureaccess/1.0.3/failureaccess-1.0.3.jar:/Users/applecare/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/applecare/.m2/repository/com/google/errorprone/error_prone_annotations/2.41.0/error_prone_annotations-2.41.0.jar:/Users/applecare/.m2/repository/com/google/j2objc/j2objc-annotations/3.1/j2objc-annotations-3.1.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-api/1.59.0/opentelemetry-api-1.59.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-context/1.59.0/opentelemetry-context-1.59.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-common/1.59.0/opentelemetry-common-1.59.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.59.0/opentelemetry-exporter-logging-1.59.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.59.0/opentelemetry-sdk-common-1.59.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.59.0/opentelemetry-sdk-extension-autoconfigure-spi-1.59.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.59.0/opentelemetry-sdk-extension-autoconfigure-1.59.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.59.0/opentelemetry-sdk-trace-1.59.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.59.0/opentelemetry-sdk-1.59.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.59.0/opentelemetry-sdk-metrics-1.59.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.59.0/opentelemetry-sdk-logs-1.59.0.jar:/Users/applecare/.m2/repository/net/bytebuddy/byte-buddy/1.18.5/byte-buddy-1.18.5.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-os/4.41.0/selenium-os-4.41.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.41.0/selenium-safari-driver-4.41.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-support/4.41.0/selenium-support-4.41.0.jar:/Users/applecare/.m2/repository/org/testng/testng/7.12.0/testng-7.12.0.jar:/Users/applecare/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/applecare/.m2/repository/org/jcommander/jcommander/1.83/jcommander-1.83.jar:/Users/applecare/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/applecare/.m2/repository/io/qameta/allure/allure-testng/2.21.0/allure-testng-2.21.0.jar:/Users/applecare/.m2/repository/io/qameta/allure/allure-java-commons/2.21.0/allure-java-commons-2.21.0.jar:/Users/applecare/.m2/repository/io/qameta/allure/allure-model/2.21.0/allure-model-2.21.0.jar:/Users/applecare/.m2/repository/io/qameta/allure/allure-test-filter/2.21.0/allure-test-filter-2.21.0.jar:"/>
+    <property name="surefire.test.class.path" value="/Users/applecare/Desktop/Testing-Assignment2-part-A/target/test-classes:/Users/applecare/Desktop/Testing-Assignment2-part-A/target/classes:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-java/4.32.0/selenium-java-4.32.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-api/4.32.0/selenium-api-4.32.0.jar:/Users/applecare/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.32.0/selenium-chrome-driver-4.32.0.jar:/Users/applecare/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.32.0/selenium-chromium-driver-4.32.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-json/4.32.0/selenium-json-4.32.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.32.0/selenium-manager-4.32.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v134/4.32.0/selenium-devtools-v134-4.32.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v135/4.32.0/selenium-devtools-v135-4.32.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v136/4.32.0/selenium-devtools-v136-4.32.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.32.0/selenium-edge-driver-4.32.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.32.0/selenium-firefox-driver-4.32.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-http/4.32.0/selenium-http-4.32.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.32.0/selenium-ie-driver-4.32.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.32.0/selenium-remote-driver-4.32.0.jar:/Users/applecare/.m2/repository/com/google/guava/guava/33.4.8-jre/guava-33.4.8-jre.jar:/Users/applecare/.m2/repository/com/google/guava/failureaccess/1.0.3/failureaccess-1.0.3.jar:/Users/applecare/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/applecare/.m2/repository/com/google/errorprone/error_prone_annotations/2.36.0/error_prone_annotations-2.36.0.jar:/Users/applecare/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-api/1.49.0/opentelemetry-api-1.49.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-context/1.49.0/opentelemetry-context-1.49.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.49.0/opentelemetry-exporter-logging-1.49.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.49.0/opentelemetry-sdk-common-1.49.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.49.0/opentelemetry-sdk-extension-autoconfigure-spi-1.49.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.49.0/opentelemetry-sdk-extension-autoconfigure-1.49.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.49.0/opentelemetry-sdk-trace-1.49.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.49.0/opentelemetry-sdk-1.49.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.49.0/opentelemetry-sdk-metrics-1.49.0.jar:/Users/applecare/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.49.0/opentelemetry-sdk-logs-1.49.0.jar:/Users/applecare/.m2/repository/net/bytebuddy/byte-buddy/1.17.5/byte-buddy-1.17.5.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-os/4.32.0/selenium-os-4.32.0.jar:/Users/applecare/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.32.0/selenium-safari-driver-4.32.0.jar:/Users/applecare/.m2/repository/org/seleniumhq/selenium/selenium-support/4.32.0/selenium-support-4.32.0.jar:/Users/applecare/.m2/repository/org/testng/testng/7.12.0/testng-7.12.0.jar:/Users/applecare/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/applecare/.m2/repository/org/jcommander/jcommander/1.83/jcommander-1.83.jar:/Users/applecare/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/applecare/.m2/repository/io/qameta/allure/allure-testng/2.21.0/allure-testng-2.21.0.jar:/Users/applecare/.m2/repository/io/qameta/allure/allure-java-commons/2.21.0/allure-java-commons-2.21.0.jar:/Users/applecare/.m2/repository/io/qameta/allure/allure-model/2.21.0/allure-model-2.21.0.jar:/Users/applecare/.m2/repository/io/qameta/allure/allure-test-filter/2.21.0/allure-test-filter-2.21.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/applecare"/>
     <property name="user.language" value="en"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/applecare/Desktop/Testing-Assignment2-part-A/target/surefire/surefirebooter-20260430110631033_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/applecare/Desktop/Testing-Assignment2-part-A/target/surefire/surefirebooter-20260501053046673_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="25.0.2"/>
@@ -61,431 +61,119 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="testLogin[shazawagdyy@gmail.com, 1234](1)" classname="tests.ProductTests" time="2.727">
-    <failure message="stale element reference: stale element not found&#10;  (Session info: chrome=147.0.7727.137)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception&#10;Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.4.1&apos;, java.version: &apos;25.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [58fa3848c8cc68313b32de8fb4a4df80, clickElement {id=f.6A610EDD63BD9F2CBCE13DD68C30E7C2.d.7BF789FF0D4BB9D9E539A52A42D4F47F.e.103}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.137, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: /var/folders/b6/xq01xyd96xb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51330}, goog:processID: 87026, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51330/devtoo..., se:cdpVersion: 147.0.7727.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on mac (58fa3848c8cc68313b32de8fb4a4df80)] -&gt; css selector: a[href*=&apos;path=57&apos;]]&#10;Session ID: 58fa3848c8cc68313b32de8fb4a4df80" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[org.openqa.selenium.StaleElementReferenceException: 
-stale element reference: stale element not found
-  (Session info: chrome=147.0.7727.137)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
-Build info: version: '4.41.0', revision: '9fc754f'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.4.1', java.version: '25.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [58fa3848c8cc68313b32de8fb4a4df80, clickElement {id=f.6A610EDD63BD9F2CBCE13DD68C30E7C2.d.7BF789FF0D4BB9D9E539A52A42D4F47F.e.103}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.137, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: /var/folders/b6/xq01xyd96xb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51330}, goog:processID: 87026, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51330/devtoo..., se:cdpVersion: 147.0.7727.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on mac (58fa3848c8cc68313b32de8fb4a4df80)] -> css selector: a[href*='path=57']]
-Session ID: 58fa3848c8cc68313b32de8fb4a4df80
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at pages.ProductPage.goToTablets(ProductPage.java:36)
-	at tests.ProductTests.testLogin(ProductTests.java:39)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></failure>
+  <testcase name="testLogin[shazawagdyy@gmail.com, 1234](1)" classname="tests.ProductTests" time="5.362">
     <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
 SLF4J(W): Defaulting to no-operation (NOP) logger implementation
 SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
-Apr 30, 2026 11:06:39 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 147, returning the closest version; found: 145; Please update to a Selenium version that supports CDP version 147
+May 01, 2026 5:30:48 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 147
+May 01, 2026 5:30:48 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 147.0.7727.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.32.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="outOfStockItemsCartE2ETest[user2@mail.com, 12345, Tablets, Samsung Galaxy Tab 10.1, Laptops &amp; Notebooks, HP LP3065, 2025-12-25](1)" classname="tests.ShoppingCartTests" time="7.364">
-    <failure message="expected [$299.99] but found [$2,799.94]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [$299.99] but found [$2,799.94]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at tests.ShoppingCartTests.outOfStockItemsCartE2ETest(ShoppingCartTests.java:74)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></failure>
-    <system-err><![CDATA[Apr 30, 2026 11:06:46 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 147, returning the closest version; found: 145; Please update to a Selenium version that supports CDP version 147
+  <testcase name="shoppingCartTest[shazawagdy@test.com, 1234, Tablets, Samsung Galaxy Tab 10.1, Laptops &amp; Notebooks, HP LP3065, 2025-12-25](1)" classname="tests.ShoppingCartTests" time="12.189">
+    <system-err><![CDATA[May 01, 2026 5:30:58 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 147
+May 01, 2026 5:30:58 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 147.0.7727.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.32.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="testLogin[shazawagdyy@gmail.com, 1234](1)" classname="tests.CurrencyTests" time="3.59">
-    <failure message="stale element reference: stale element not found&#10;  (Session info: chrome=147.0.7727.137)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception&#10;Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.4.1&apos;, java.version: &apos;25.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [79b05747a866bf9bb47fba6e76d50fca, clickElement {id=f.EC905F86D411E130987E164FF49B5015.d.76E1D908131906DCC392207F13B3FFD3.e.103}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.137, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: /var/folders/b6/xq01xyd96xb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51378}, goog:processID: 87136, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51378/devtoo..., se:cdpVersion: 147.0.7727.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on mac (79b05747a866bf9bb47fba6e76d50fca)] -&gt; css selector: a.dropdown-toggle[href*=&apos;path=20&apos;]]&#10;Session ID: 79b05747a866bf9bb47fba6e76d50fca" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[org.openqa.selenium.StaleElementReferenceException: 
-stale element reference: stale element not found
-  (Session info: chrome=147.0.7727.137)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
-Build info: version: '4.41.0', revision: '9fc754f'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.4.1', java.version: '25.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [79b05747a866bf9bb47fba6e76d50fca, clickElement {id=f.EC905F86D411E130987E164FF49B5015.d.76E1D908131906DCC392207F13B3FFD3.e.103}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.137, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: /var/folders/b6/xq01xyd96xb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51378}, goog:processID: 87136, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51378/devtoo..., se:cdpVersion: 147.0.7727.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on mac (79b05747a866bf9bb47fba6e76d50fca)] -> css selector: a.dropdown-toggle[href*='path=20']]
-Session ID: 79b05747a866bf9bb47fba6e76d50fca
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at pages.ProductPage.goToDesktops(ProductPage.java:30)
-	at tests.CurrencyTests.testLogin(CurrencyTests.java:38)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></failure>
-    <system-err><![CDATA[Apr 30, 2026 11:06:57 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 147, returning the closest version; found: 145; Please update to a Selenium version that supports CDP version 147
+  <testcase name="testLogin[shazawagdyy@gmail.com, 1234](1)" classname="tests.CurrencyTests" time="6.452">
+    <system-err><![CDATA[May 01, 2026 5:31:14 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 147
+May 01, 2026 5:31:14 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 147.0.7727.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.32.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="searchInSubcategoriesTest[user2@mail.com, 12345, Apple, Components, There is no product that matches the search criteria., Apple Cinema 30&quot;](1)" classname="tests.SearchTests" time="3.018">
-    <failure message="stale element reference: stale element not found&#10;  (Session info: chrome=147.0.7727.137)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception&#10;Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.4.1&apos;, java.version: &apos;25.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [aeb1c3c550834b22a33ff9e1734781e8, clickElement {id=f.6FCF451B426F15BB5040C8042BC96D02.d.E005656951D144024D7864230E71DFE4.e.102}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.137, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: /var/folders/b6/xq01xyd96xb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51400}, goog:processID: 87188, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51400/devtoo..., se:cdpVersion: 147.0.7727.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on mac (aeb1c3c550834b22a33ff9e1734781e8)] -&gt; css selector: button.btn.btn-default.btn-lg]&#10;Session ID: aeb1c3c550834b22a33ff9e1734781e8" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[org.openqa.selenium.StaleElementReferenceException: 
-stale element reference: stale element not found
-  (Session info: chrome=147.0.7727.137)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
-Build info: version: '4.41.0', revision: '9fc754f'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.4.1', java.version: '25.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [aeb1c3c550834b22a33ff9e1734781e8, clickElement {id=f.6FCF451B426F15BB5040C8042BC96D02.d.E005656951D144024D7864230E71DFE4.e.102}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.137, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: /var/folders/b6/xq01xyd96xb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51400}, goog:processID: 87188, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51400/devtoo..., se:cdpVersion: 147.0.7727.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on mac (aeb1c3c550834b22a33ff9e1734781e8)] -> css selector: button.btn.btn-default.btn-lg]
-Session ID: aeb1c3c550834b22a33ff9e1734781e8
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at pages.SearchPage.searchButtonIconClick(SearchPage.java:40)
-	at tests.SearchTests.searchInSubcategoriesTest(SearchTests.java:76)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></failure>
-    <system-err><![CDATA[Apr 30, 2026 11:07:05 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 147, returning the closest version; found: 145; Please update to a Selenium version that supports CDP version 147
+  <testcase name="searchInSubcategoriesTest[shazawagdyy@gmail.com, 1234, Apple, Components, There is no product that matches the search criteria., Apple Cinema 30&quot;](1)" classname="tests.SearchTests" time="8.177">
+    <system-err><![CDATA[May 01, 2026 5:31:25 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 147
+May 01, 2026 5:31:25 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 147.0.7727.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.32.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="searchTest[shazawagdyy@gmail.com, 1234](1)" classname="tests.SearchTests" time="4.076">
-    <failure message="stale element reference: stale element not found&#10;  (Session info: chrome=147.0.7727.137)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception&#10;Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.4.1&apos;, java.version: &apos;25.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [ada1928111bc14644988a9a95992889c, clearElement {id=f.52F33A66D01E59CDB613202F99F37A75.d.201B5B1E33C4C2E6B4CCB2CFEB27F8B1.e.87}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.137, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: /var/folders/b6/xq01xyd96xb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51421}, goog:processID: 87237, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51421/devtoo..., se:cdpVersion: 147.0.7727.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on mac (ada1928111bc14644988a9a95992889c)] -&gt; name: search]&#10;Session ID: ada1928111bc14644988a9a95992889c" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[org.openqa.selenium.StaleElementReferenceException: 
-stale element reference: stale element not found
-  (Session info: chrome=147.0.7727.137)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
-Build info: version: '4.41.0', revision: '9fc754f'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.4.1', java.version: '25.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ada1928111bc14644988a9a95992889c, clearElement {id=f.52F33A66D01E59CDB613202F99F37A75.d.201B5B1E33C4C2E6B4CCB2CFEB27F8B1.e.87}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.137, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: /var/folders/b6/xq01xyd96xb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51421}, goog:processID: 87237, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51421/devtoo..., se:cdpVersion: 147.0.7727.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on mac (ada1928111bc14644988a9a95992889c)] -> name: search]
-Session ID: ada1928111bc14644988a9a95992889c
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129)
-	at pages.SearchPage.search(SearchPage.java:32)
-	at tests.SearchTests.searchTest(SearchTests.java:57)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></failure>
-    <system-err><![CDATA[Apr 30, 2026 11:07:12 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 147, returning the closest version; found: 145; Please update to a Selenium version that supports CDP version 147
+  <testcase name="searchTest[shazawagdyy@gmail.com, 1234, Mac](1)" classname="tests.SearchTests" time="6.416">
+    <system-err><![CDATA[May 01, 2026 5:31:36 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 147
+May 01, 2026 5:31:36 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 147.0.7727.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.32.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="sortProductsTest[user2@mail.com, 12345, Phones &amp; PDAs, Name (A - Z)](1)" classname="tests.SortingTests" time="4.52">
-    <system-err><![CDATA[Apr 30, 2026 11:07:19 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 147, returning the closest version; found: 145; Please update to a Selenium version that supports CDP version 147
+  <testcase name="searchTest[shazawagdyy@gmail.com, 1234, Apple](2)" classname="tests.SearchTests" time="4.262">
+    <system-err><![CDATA[May 01, 2026 5:31:46 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 147
+May 01, 2026 5:31:46 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 147.0.7727.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.32.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="sortProductsTest[user2@mail.com, 12345, Phones &amp; PDAs, Name (Z - A)](2)" classname="tests.SortingTests" time="5.59">
-    <system-err><![CDATA[Apr 30, 2026 11:07:27 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 147, returning the closest version; found: 145; Please update to a Selenium version that supports CDP version 147
+  <testcase name="sortProductsTest[shazawagdyy@gmail.com, 1234, Phones &amp; PDAs, Name (A - Z)](1)" classname="tests.SortingTests" time="4.731">
+    <system-err><![CDATA[May 01, 2026 5:31:55 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 147
+May 01, 2026 5:31:55 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 147.0.7727.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.32.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="normalCheckoutProcessTest[user2@mail.com, 12345, Desktops, HP LP3065, Jane, Smith, Alexandria, Alexandria, Egypt, Al Iskandariyah, Test order 2](1)" classname="tests.CheckoutTests" time="23.523">
-    <failure message="Expected condition failed: waiting for element found by By.id: button-payment-address to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#button\-payment\-address&quot;}.&#10;(tried for 15 seconds with 500 milliseconds interval)&#10;Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.4.1&apos;, java.version: &apos;25.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.137, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: /var/folders/b6/xq01xyd96xb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51491}, goog:processID: 87384, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51491/devtoo..., se:cdpVersion: 147.0.7727.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 258f218611f73c483f032cb5f215b37d" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
-Expected condition failed: waiting for element found by By.id: button-payment-address to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#button\-payment\-address"}.
-(tried for 15 seconds with 500 milliseconds interval)
-Build info: version: '4.41.0', revision: '9fc754f'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.4.1', java.version: '25.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.137, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: /var/folders/b6/xq01xyd96xb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51491}, goog:processID: 87384, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51491/devtoo..., se:cdpVersion: 147.0.7727.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 258f218611f73c483f032cb5f215b37d
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:233)
-	at pages.ShoppingCartPage.clickContinue(ShoppingCartPage.java:202)
-	at tests.CheckoutTests.normalCheckoutProcessTest(CheckoutTests.java:55)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></failure>
-    <system-err><![CDATA[Apr 30, 2026 11:07:37 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 147, returning the closest version; found: 145; Please update to a Selenium version that supports CDP version 147
+  <testcase name="sortProductsTest[shazawagdyy@gmail.com, 1234, Phones &amp; PDAs, Name (Z - A)](2)" classname="tests.SortingTests" time="4.87">
+    <system-err><![CDATA[May 01, 2026 5:32:03 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 147
+May 01, 2026 5:32:03 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 147.0.7727.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.32.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="normalCheckoutProcessTest[user2@mail.com, 12345, MP3 Players, iPod Shuffle, John, Doe, Cairo, Cairo, Egypt, Al Qahirah, Test order 1](2)" classname="tests.CheckoutTests" time="21.75">
-    <failure message="Expected condition failed: waiting for element found by By.id: button-payment-address to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#button\-payment\-address&quot;}.&#10;(tried for 15 seconds with 500 milliseconds interval)&#10;Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.4.1&apos;, java.version: &apos;25.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.137, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: /var/folders/b6/xq01xyd96xb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51522}, goog:processID: 87476, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51522/devtoo..., se:cdpVersion: 147.0.7727.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 7e8ae430025004cf2fea91339a74437c" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
-Expected condition failed: waiting for element found by By.id: button-payment-address to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#button\-payment\-address"}.
-(tried for 15 seconds with 500 milliseconds interval)
-Build info: version: '4.41.0', revision: '9fc754f'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.4.1', java.version: '25.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.137, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: /var/folders/b6/xq01xyd96xb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51522}, goog:processID: 87476, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51522/devtoo..., se:cdpVersion: 147.0.7727.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7e8ae430025004cf2fea91339a74437c
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:233)
-	at pages.ShoppingCartPage.clickContinue(ShoppingCartPage.java:202)
-	at tests.CheckoutTests.normalCheckoutProcessTest(CheckoutTests.java:55)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></failure>
-    <system-err><![CDATA[Apr 30, 2026 11:08:13 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 147, returning the closest version; found: 145; Please update to a Selenium version that supports CDP version 147
+  <testcase name="normalCheckoutProcessTest[zozoo@test.com, 1234, Desktops, HP LP3065, Jane, Smith, Alexandria, Alexandria, Egypt, Dumyat, Test order 2](1)" classname="tests.CheckoutTests" time="22.142">
+    <system-err><![CDATA[May 01, 2026 5:32:13 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 147
+May 01, 2026 5:32:13 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 147.0.7727.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.32.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="testLogin[zozoo@test.com, 1234, valid](1)" classname="tests.LoginTests" time="2.776">
-    <system-err><![CDATA[Apr 30, 2026 11:08:49 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 147, returning the closest version; found: 145; Please update to a Selenium version that supports CDP version 147
+  <testcase name="testLogin[zozoo@test.com, 1234, valid](1)" classname="tests.LoginTests" time="4.616">
+    <system-err><![CDATA[May 01, 2026 5:32:50 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 147
+May 01, 2026 5:32:50 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 147.0.7727.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.32.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="testLogin[wrong@email.com, wrongpass, invalid](2)" classname="tests.LoginTests" time="7.151">
-    <system-err><![CDATA[Apr 30, 2026 11:08:55 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 147, returning the closest version; found: 145; Please update to a Selenium version that supports CDP version 147
+  <testcase name="testLogin[wrong@email.com, wrongpass, invalid](2)" classname="tests.LoginTests" time="2.157">
+    <system-err><![CDATA[May 01, 2026 5:32:57 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 147
+May 01, 2026 5:32:57 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 147.0.7727.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.32.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="testLogin[zozoo@test.com, 12345, invalid](3)" classname="tests.LoginTests" time="2.118">
-    <system-err><![CDATA[Apr 30, 2026 11:09:07 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 147, returning the closest version; found: 145; Please update to a Selenium version that supports CDP version 147
+  <testcase name="testLogin[zozoo@test.com, 12345, invalid](3)" classname="tests.LoginTests" time="2.272">
+    <system-err><![CDATA[May 01, 2026 5:33:02 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 147
+May 01, 2026 5:33:02 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 147.0.7727.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.32.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="testLogin[shazawagdyy@gmail.com, 1234, valid](4)" classname="tests.LoginTests" time="3.658">
-    <system-err><![CDATA[Apr 30, 2026 11:09:13 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 147, returning the closest version; found: 145; Please update to a Selenium version that supports CDP version 147
+  <testcase name="testLogin[shazawagdyy@gmail.com, 1234, valid](4)" classname="tests.LoginTests" time="2.503">
+    <system-err><![CDATA[May 01, 2026 5:33:09 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 147
+May 01, 2026 5:33:09 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 147.0.7727.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.32.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="registrationTest[Shaza, Ahmed, shaza, 1234567890, 12345, ](1)" classname="tests.RegistrationTests" time="3.916">
-    <system-err><![CDATA[Apr 30, 2026 11:09:20 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 147, returning the closest version; found: 145; Please update to a Selenium version that supports CDP version 147
+  <testcase name="registrationTest[Shaza, Ahmed, shaza, 1234567890, 12345, ](1)" classname="tests.RegistrationTests" time="4.274">
+    <system-err><![CDATA[May 01, 2026 5:33:15 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 147
+May 01, 2026 5:33:15 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 147.0.7727.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.32.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="registrationTest[Aisha, Ashour, aisha, 1234567890, 12, Password must be between 4 and 20 characters!](2)" classname="tests.RegistrationTests" time="3.357">
-    <system-err><![CDATA[Apr 30, 2026 11:09:28 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 147, returning the closest version; found: 145; Please update to a Selenium version that supports CDP version 147
+  <testcase name="registrationTest[Aisha, Ashour, aisha, 1234567890, 12, Password must be between 4 and 20 characters!](2)" classname="tests.RegistrationTests" time="3.476">
+    <system-err><![CDATA[May 01, 2026 5:33:24 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 147
+May 01, 2026 5:33:24 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 147.0.7727.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.32.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="registrationTest[Rania, Rafat, rania, 1234567890, , Password must be between 4 and 20 characters!](3)" classname="tests.RegistrationTests" time="1.888">
-    <system-err><![CDATA[Apr 30, 2026 11:09:34 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 147, returning the closest version; found: 145; Please update to a Selenium version that supports CDP version 147
+  <testcase name="registrationTest[Rania, Rafat, rania, 1234567890, , Password must be between 4 and 20 characters!](3)" classname="tests.RegistrationTests" time="2.384">
+    <system-err><![CDATA[May 01, 2026 5:33:30 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 147
+May 01, 2026 5:33:30 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 147.0.7727.138. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.32.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
 </testsuite>

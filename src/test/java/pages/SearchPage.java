@@ -75,10 +75,12 @@ public class SearchPage {
         return driver.findElement(noResultsMsg).getText();
     }
 
-     public boolean isProductDisplayed(){
+    public boolean isProductDisplayed(String productName) {
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-            WebElement product = wait.until(ExpectedConditions.visibilityOfElementLocated(resultProduct));
+            WebElement product = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                    By.linkText(productName)
+            ));
             return product.isDisplayed();
         } catch (Exception e) {
             return false;

@@ -1,0 +1,1 @@
+{"uuid":"fda8500a-06e5-4920-bd50-c22ad9a031a7","name":"base.BaseTest.setup","children":["ba59b8f7-5be8-49b8-b840-02023ca72284"],"description":"","befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1778161389803,"stop":1778161393226}],"afters":[],"start":1778161389803,"stop":1778161393226}

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>16/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>16/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri May 01 12:45:23 EEST 2026</td>
+<td>Started on:</td><td>Thu May 07 19:48:04 EEST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>188 seconds (188800 ms)</td>
+<tr><td>Total time:</td><td>194 seconds (194899 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,73 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.CheckoutTests.normalCheckoutProcessTest()'><b>normalCheckoutProcessTest</b><br>Test class: tests.CheckoutTests<br>Parameters: shazaaa@test.com, 1234, MP3 Players, iPod Shuffle, John, Doe, Cairo, Cairo, Egypt, Al Dumyat, Test order 1</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: input[name=&apos;payment_address&apos;][value=&apos;new&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.4.1&apos;, java.version: &apos;25.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.97, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: /var/folders/b6/xq01xyd96xb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58137}, goog:processID: 66318, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58137/devtoo..., se:cdpVersion: 148.0.7778.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0785772ec154dc2aa502b0f32913ef7e
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.ShoppingCartPage.clickShippingRadioBtn(ShoppingCartPage.java:81)
+	at tests.CheckoutTests.normalCheckoutProcessTest(CheckoutTests.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1708650148", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1708650148'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: input[name=&apos;payment_address&apos;][value=&apos;new&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.4.1&apos;, java.version: &apos;25.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.97, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: /var/folders/b6/xq01xyd96xb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58137}, goog:processID: 66318, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58137/devtoo..., se:cdpVersion: 148.0.7778.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0785772ec154dc2aa502b0f32913ef7e
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.ShoppingCartPage.clickShippingRadioBtn(ShoppingCartPage.java:81)
+	at tests.CheckoutTests.normalCheckoutProcessTest(CheckoutTests.java:72)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>17</td>
+<td>tests.CheckoutTests@2f8dad04</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,85 +143,85 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.SearchTests.searchInSubcategoriesTest()'><b>searchInSubcategoriesTest</b><br>Test class: tests.SearchTests<br>Parameters: shazawagdyy@gmail.com, 1234, Apple, Components, There is no product that matches the search criteria., Apple Cinema 30"</td>
+<td title='tests.SearchTests.searchTest()'><b>searchTest</b><br>Test class: tests.SearchTests<br>Parameters: shazawagdyy@gmail.com, 1234, Apple</td>
+<td></td>
+<td>3</td>
+<td>tests.SearchTests@53976f5c</td></tr>
+<tr>
+<td title='tests.SearchTests.searchTest()'><b>searchTest</b><br>Test class: tests.SearchTests<br>Parameters: shazawagdyy@gmail.com, 1234, Mac</td>
+<td></td>
+<td>4</td>
+<td>tests.SearchTests@53976f5c</td></tr>
+<tr>
+<td title='tests.ProductTests.testLogin()'><b>testLogin</b><br>Test class: tests.ProductTests<br>Parameters: shazawagdyy@gmail.com, 1234</td>
 <td></td>
 <td>6</td>
-<td>tests.SearchTests@4e7912d8</td></tr>
+<td>tests.ProductTests@13b13b5d</td></tr>
 <tr>
-<td title='tests.CheckoutTests.normalCheckoutProcessTest()'><b>normalCheckoutProcessTest</b><br>Test class: tests.CheckoutTests<br>Parameters: zozoo@test.com, 1234, Desktops, HP LP3065, Jane, Smith, Alexandria, Alexandria, Egypt, Dumyat, Test order 2</td>
+<td title='tests.SearchTests.searchInSubcategoriesTest()'><b>searchInSubcategoriesTest</b><br>Test class: tests.SearchTests<br>Parameters: shazawagdyy@gmail.com, 1234, Apple, Components, There is no product that matches the search criteria., Apple Cinema 30"</td>
 <td></td>
-<td>20</td>
-<td>tests.CheckoutTests@2bfc268b</td></tr>
+<td>4</td>
+<td>tests.SearchTests@53976f5c</td></tr>
+<tr>
+<td title='tests.LoginTests.testLogin()'><b>testLogin</b><br>Test class: tests.LoginTests<br>Parameters: shazawagdyy@gmail.com, 1234, valid</td>
+<td></td>
+<td>3</td>
+<td>tests.LoginTests@29e495ff</td></tr>
+<tr>
+<td title='tests.SortingTests.sortProductsTest()'><b>sortProductsTest</b><br>Test class: tests.SortingTests<br>Parameters: shazawagdyy@gmail.com, 1234, Phones & PDAs, Name (Z - A)</td>
+<td></td>
+<td>4</td>
+<td>tests.SortingTests@2bfc268b</td></tr>
+<tr>
+<td title='tests.CurrencyTests.testLogin()'><b>testLogin</b><br>Test class: tests.CurrencyTests<br>Parameters: shazawagdyy@gmail.com, 1234</td>
+<td></td>
+<td>3</td>
+<td>tests.CurrencyTests@4e7912d8</td></tr>
+<tr>
+<td title='tests.LoginTests.testLogin()'><b>testLogin</b><br>Test class: tests.LoginTests<br>Parameters: zozoo@test.com, 1234, valid</td>
+<td></td>
+<td>3</td>
+<td>tests.LoginTests@29e495ff</td></tr>
+<tr>
+<td title='tests.ShoppingCartTests.shoppingCartTest()'><b>shoppingCartTest</b><br>Test class: tests.ShoppingCartTests<br>Parameters: shazawagdy@test.com, 1234, Tablets, Samsung Galaxy Tab 10.1, Laptops & Notebooks, HP LP3065, 2025-12-25</td>
+<td></td>
+<td>7</td>
+<td>tests.ShoppingCartTests@696da30b</td></tr>
 <tr>
 <td title='tests.LoginTests.testLogin()'><b>testLogin</b><br>Test class: tests.LoginTests<br>Parameters: zozoo@test.com, 12345, invalid</td>
 <td></td>
-<td>3</td>
-<td>tests.LoginTests@2f8dad04</td></tr>
+<td>2</td>
+<td>tests.LoginTests@29e495ff</td></tr>
 <tr>
 <td title='tests.RegistrationTests.registrationTest()'><b>registrationTest</b><br>Test class: tests.RegistrationTests<br>Parameters: Rania, Rafat, rania, 1234567890, , Password must be between 4 and 20 characters!</td>
 <td></td>
 <td>2</td>
-<td>tests.RegistrationTests@29e495ff</td></tr>
+<td>tests.RegistrationTests@41e1e210</td></tr>
 <tr>
-<td title='tests.SearchTests.searchTest()'><b>searchTest</b><br>Test class: tests.SearchTests<br>Parameters: shazawagdyy@gmail.com, 1234, Apple</td>
+<td title='tests.CheckoutTests.normalCheckoutProcessTest()'><b>normalCheckoutProcessTest</b><br>Test class: tests.CheckoutTests<br>Parameters: zozoo@test.com, 1234, Desktops, HP LP3065, Jane, Smith, Alexandria, Alexandria, Egypt, Dumyat, Test order 2</td>
 <td></td>
-<td>4</td>
-<td>tests.SearchTests@4e7912d8</td></tr>
+<td>16</td>
+<td>tests.CheckoutTests@2f8dad04</td></tr>
 <tr>
-<td title='tests.SortingTests.sortProductsTest()'><b>sortProductsTest</b><br>Test class: tests.SortingTests<br>Parameters: shazawagdyy@gmail.com, 1234, Phones & PDAs, Name (Z - A)</td>
+<td title='tests.RegistrationTests.registrationTest()'><b>registrationTest</b><br>Test class: tests.RegistrationTests<br>Parameters: Shaza, Ahmed, shaza, 1234567890, 12345, </td>
 <td></td>
 <td>7</td>
-<td>tests.SortingTests@53976f5c</td></tr>
+<td>tests.RegistrationTests@41e1e210</td></tr>
 <tr>
 <td title='tests.LoginTests.testLogin()'><b>testLogin</b><br>Test class: tests.LoginTests<br>Parameters: wrong@email.com, wrongpass, invalid</td>
 <td></td>
-<td>6</td>
-<td>tests.LoginTests@2f8dad04</td></tr>
-<tr>
-<td title='tests.CurrencyTests.testLogin()'><b>testLogin</b><br>Test class: tests.CurrencyTests<br>Parameters: shazawagdyy@gmail.com, 1234</td>
-<td></td>
-<td>6</td>
-<td>tests.CurrencyTests@696da30b</td></tr>
+<td>2</td>
+<td>tests.LoginTests@29e495ff</td></tr>
 <tr>
 <td title='tests.SortingTests.sortProductsTest()'><b>sortProductsTest</b><br>Test class: tests.SortingTests<br>Parameters: shazawagdyy@gmail.com, 1234, Phones & PDAs, Name (A - Z)</td>
 <td></td>
 <td>8</td>
-<td>tests.SortingTests@53976f5c</td></tr>
-<tr>
-<td title='tests.RegistrationTests.registrationTest()'><b>registrationTest</b><br>Test class: tests.RegistrationTests<br>Parameters: Shaza, Ahmed, shaza, 1234567890, 12345, </td>
-<td></td>
-<td>3</td>
-<td>tests.RegistrationTests@29e495ff</td></tr>
-<tr>
-<td title='tests.ProductTests.testLogin()'><b>testLogin</b><br>Test class: tests.ProductTests<br>Parameters: shazawagdyy@gmail.com, 1234</td>
-<td></td>
-<td>5</td>
-<td>tests.ProductTests@40cb8df7</td></tr>
-<tr>
-<td title='tests.ShoppingCartTests.shoppingCartTest()'><b>shoppingCartTest</b><br>Test class: tests.ShoppingCartTests<br>Parameters: shazawagdy@test.com, 1234, Tablets, Samsung Galaxy Tab 10.1, Laptops & Notebooks, HP LP3065, 2025-12-25</td>
-<td></td>
-<td>10</td>
-<td>tests.ShoppingCartTests@5fd4f8f5</td></tr>
-<tr>
-<td title='tests.LoginTests.testLogin()'><b>testLogin</b><br>Test class: tests.LoginTests<br>Parameters: zozoo@test.com, 1234, valid</td>
-<td></td>
-<td>2</td>
-<td>tests.LoginTests@2f8dad04</td></tr>
+<td>tests.SortingTests@2bfc268b</td></tr>
 <tr>
 <td title='tests.RegistrationTests.registrationTest()'><b>registrationTest</b><br>Test class: tests.RegistrationTests<br>Parameters: Aisha, Ashour, aisha, 1234567890, 12, Password must be between 4 and 20 characters!</td>
 <td></td>
 <td>2</td>
-<td>tests.RegistrationTests@29e495ff</td></tr>
-<tr>
-<td title='tests.SearchTests.searchTest()'><b>searchTest</b><br>Test class: tests.SearchTests<br>Parameters: shazawagdyy@gmail.com, 1234, Mac</td>
-<td></td>
-<td>6</td>
-<td>tests.SearchTests@4e7912d8</td></tr>
-<tr>
-<td title='tests.LoginTests.testLogin()'><b>testLogin</b><br>Test class: tests.LoginTests<br>Parameters: shazawagdyy@gmail.com, 1234, valid</td>
-<td></td>
-<td>2</td>
-<td>tests.LoginTests@2f8dad04</td></tr>
+<td>tests.RegistrationTests@41e1e210</td></tr>
 </table><p>
 </body>
 </html>

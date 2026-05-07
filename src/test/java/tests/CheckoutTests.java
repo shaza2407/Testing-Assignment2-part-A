@@ -39,82 +39,81 @@ public class CheckoutTests extends BaseTest {
     public void normalCheckoutProcessTest(String email, String password, String category, String productName, 
                                           String firstName, String lastName, String address, 
                                           String city, String country, String region, String comment) {
+            HomePage home = new HomePage(driver);
+            LoginPage login = new LoginPage(driver);
+            ProductPage pr = new ProductPage(driver);
+            ShoppingCartPage shoppingCart = new ShoppingCartPage(driver);
+            AccountPage account = new AccountPage(driver);
 
-        HomePage home = new HomePage(driver);
-        LoginPage login = new LoginPage(driver);
-        ProductPage pr = new ProductPage(driver);
-        ShoppingCartPage shoppingCart = new ShoppingCartPage(driver);
-        AccountPage account = new AccountPage(driver);
+            home.goToLogin();                   //log in with email and password
+            login.login(email, password);
 
-        home.goToLogin();                   //log in with email and password
-        login.login(email, password);
+            pr.goToCategory(category);          // Click on category ->"MP3 Players"
+            shoppingCart.addToCartAction(productName, category);   //add product to cart
 
-        pr.goToCategory(category);          // Click on category ->"MP3 Players"
-        shoppingCart.addToCartAction(productName,category);   //add product to cart
+            Assert.assertTrue(shoppingCart.getSuccessMsg().contains(productName));      //check if success message is displayed
 
-        Assert.assertTrue(shoppingCart.getSuccessMsg().contains(productName));      //check if success message is displayed
+            //steps 5
+            pr.goToShoppingCart();
+            String[] product = shoppingCart.getProductDetails(productName);
+            Assert.assertEquals(product[0], productName);
 
-        //steps 5
-        pr.goToShoppingCart();
-        String[] product = shoppingCart.getProductDetails(productName);
-        Assert.assertEquals(product[0], productName);
-
-        //steps 6:click on "View Cart" to check on that product added
-        shoppingCart.clickCart();
-        shoppingCart.clickViewCart();
-        String[] products = shoppingCart.getProductDetails(productName);
-        Assert.assertEquals(products[0], productName);
+            //steps 6:click on "View Cart" to check on that product added
+            shoppingCart.clickCart();
+            shoppingCart.clickViewCart();
+            String[] products = shoppingCart.getProductDetails(productName);
+            Assert.assertEquals(products[0], productName);
 
 
-        //step 7:click Checkout
-        shoppingCart.clickCheckoutBtn();
+            //step 7:click Checkout
+            shoppingCart.clickCheckoutBtn();
 
-        //steps 8-11:billing &shipping Details
-        shoppingCart.clickShippingRadioBtn();
-        // Fill payment details
-        shoppingCart.enterFirstName(firstName);
-        shoppingCart.enterLastName(lastName);
-        shoppingCart.enterAddress(address);
-        shoppingCart.enterCity(city);
-        shoppingCart.selectCountry(country);
-        shoppingCart.selectRegion(region);
-        shoppingCart.clickContinue("payment", "address");
+            //steps 8-11:billing &shipping Details
+            shoppingCart.clickShippingRadioBtn();
+            // Fill payment details
+            shoppingCart.enterFirstName(firstName);
+            shoppingCart.enterLastName(lastName);
+            shoppingCart.enterAddress(address);
+            shoppingCart.enterCity(city);
+            shoppingCart.selectCountry(country);
+            shoppingCart.selectRegion(region);
+            shoppingCart.clickContinue("payment", "address");
 
-        shoppingCart.selectExistingShippingAddress(firstName, lastName,city);
-        shoppingCart.clickContinue("shipping", "address");
+            shoppingCart.selectExistingShippingAddress(firstName, lastName, city);
+            shoppingCart.clickContinue("shipping", "address");
 
-        //steps 12 & 13: Delivery method and Comment
-        shoppingCart.enterComment(comment);
-        String flatShippingRate = shoppingCart.getFlatShippingRate();
-        shoppingCart.clickContinue("shipping", "method");
+            //steps 12 & 13: Delivery method and Comment
+            shoppingCart.enterComment(comment);
+            String flatShippingRate = shoppingCart.getFlatShippingRate();
+            shoppingCart.clickContinue("shipping", "method");
 
-        //step 14:payment method and Terms
-        shoppingCart.clickTermsBtn();
-        shoppingCart.clickContinue("payment", "method");
+            //step 14:payment method and Terms
+            shoppingCart.clickTermsBtn();
+            shoppingCart.clickContinue("payment", "method");
 
-        //step 15: "Confirm order" section will appear with the same prices
-        Assert.assertEquals(shoppingCart.getUnitPrice(productName), product[1]);
+            //step 15: "Confirm order" section will appear with the same prices
+            Assert.assertEquals(shoppingCart.getUnitPrice(productName), product[1]);
 
-        //step 16:total price includes the "Flat shipping rate"
-        String totalPrice = shoppingCart.getTotalPrice();
-        
-        //clean strings and calculate math dynamically
-        double productPrice = Double.parseDouble(product[1].replace("$", "").replace(",", ""));
-        double flatShipping = Double.parseDouble(flatShippingRate.replace("$", "").replace(",", ""));
-        double totalCalculated = productPrice + flatShipping;
-        String finalTotal = "$" + String.format("%.2f", totalCalculated);
-        
-        Assert.assertEquals(totalPrice, finalTotal);            //check if total price is equal to calculated total price
+            //step 16:total price includes the "Flat shipping rate"
+            String totalPrice = shoppingCart.getTotalPrice();
 
-        //steps 17 & 18: Click Confirm Order and check final message
-        shoppingCart.clickConfirmOrderBtn();
-        Assert.assertEquals(shoppingCart.getSuccessHeaderMessage(), "Your order has been placed!");
-        //verify Cart is Empty after order
-        shoppingCart.clickContinueBtn();
-        pr.goToShoppingCart();
-        Assert.assertEquals(shoppingCart.getEmptyCartMessage(), "Your shopping cart is empty!");
-        //step 19: log out
-        account.logOut();
+            //clean strings and calculate math dynamically
+            double productPrice = Double.parseDouble(product[1].replace("$", "").replace(",", ""));
+            double flatShipping = Double.parseDouble(flatShippingRate.replace("$", "").replace(",", ""));
+            double totalCalculated = productPrice + flatShipping;
+            String finalTotal = "$" + String.format("%.2f", totalCalculated);
+
+            Assert.assertEquals(totalPrice, finalTotal);            //check if total price is equal to calculated total price
+
+            //steps 17 & 18: Click Confirm Order and check final message
+            shoppingCart.clickConfirmOrderBtn();
+            Assert.assertEquals(shoppingCart.getSuccessHeaderMessage(), "Your order has been placed!");
+            //verify Cart is Empty after order
+            shoppingCart.clickContinueBtn();
+            pr.goToShoppingCart();
+            Assert.assertEquals(shoppingCart.getEmptyCartMessage(), "Your shopping cart is empty!");
+            //step 19: log out
+            account.logOut();
 
     }
 }
